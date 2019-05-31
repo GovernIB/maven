@@ -33,6 +33,33 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>apb</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.fundaciobit.plugins</groupId>
+					<artifactId>plugin-arxiu-apb</artifactId>
+					<version>1.0.0</version>
+				</dependency>
+				<dependency>
+					<groupId>axis</groupId>
+					<artifactId>axis</artifactId>
+					<version>1.4</version>
+					<exclusions>
+						<exclusion>
+							<groupId>axis</groupId>
+					       	<artifactId>axis-jaxrpc</artifactId>
+						</exclusion>
+						<exclusion>
+							<groupId>axis</groupId>
+					        <artifactId>axis-saaj</artifactId>
+						</exclusion>
+					</exclusions>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
 	<repositories>
 		<repository>
 			<id>github-governib-maven-repos</id>
