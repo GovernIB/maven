@@ -35,9 +35,7 @@
 	</properties>
 	<modules>
 		<module>distribucio-core</module>
-		<module>distribucio-war</module>
 		<module>distribucio-core-api</module>
-		<module>distribucio-ear</module>
 		<module>distribucio-lib-common</module>
 		<module>distribucio-plugin</module>
 		<module>distribucio-plugin-impl</module>
