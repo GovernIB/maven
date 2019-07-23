@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>es.caib.loginib</groupId>
+  <artifactId>loginib-ear</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20190723.112532</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20190723112532</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>ear</extension>
+        <value>1.0.1-20190723.112532-1</value>
+        <updated>20190723112532</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.1-20190723.112532-1</value>
+        <updated>20190723112532</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
