@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>es.caib.loginib</groupId>
+  <artifactId>loginib</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20190723.111928</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20190723111928</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.1-20190723.111928-1</value>
+        <updated>20190723111928</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
