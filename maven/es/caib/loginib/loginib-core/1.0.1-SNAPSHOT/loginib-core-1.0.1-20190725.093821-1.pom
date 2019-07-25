@@ -1,0 +1,137 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>es.caib.loginib</groupId>
+    <artifactId>loginib</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>loginib-core</artifactId>
+
+  	<dependencies>
+
+  			<!-- Modulo LIB -->
+		<dependency>
+			<groupId>es.caib.loginib</groupId>
+			<artifactId>loginib-lib</artifactId>
+			<version>${loginib.version}</version>
+			<type>pom</type>
+		</dependency>
+
+		<!-- LOG -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- JPA -->
+		<dependency>
+		    <groupId>org.hibernate.javax.persistence</groupId>
+		    <artifactId>hibernate-jpa-2.1-api</artifactId>
+		    <version>${hibernate-jpa-2.1-api.version}</version>
+		    <scope>provided</scope>
+		</dependency>
+
+		<!-- EJB -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>${ejb-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>jsr250-api</artifactId>
+			<version>${jsr250-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- DOM4J -->
+		<dependency>
+	      <groupId>dom4j</groupId>
+	      <artifactId>dom4j</artifactId>
+	      <version>${dom4j.version}</version>
+	      <scope>compile</scope>
+	    </dependency>
+
+
+  	</dependencies>
+
+  	<build>
+		<plugins>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>${maven.properties.version}</version>
+				<executions>
+					<execution>
+						<phase>initialize</phase>
+						<goals>
+							<goal>read-project-properties</goal>
+						</goals>
+						<configuration>
+							<files>
+								<file>${project.basedir}/../loginib.properties</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+            	<groupId>org.apache.maven.plugins</groupId>
+            	<artifactId>maven-antrun-plugin</artifactId>
+            	<version>1.8</version>
+            	<executions>
+                	<execution>
+                    	<id>idJboss</id>
+                    	<phase>test</phase>
+                    	<goals>
+                        	<goal>run</goal>
+                    	</goals>
+                    	<configuration>
+	                        <target>
+	                            <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpathref="maven.plugin.classpath"/>
+	                            <if>
+	                            	<equals arg1="${loginConfig.authMethod}" arg2="BASIC" />
+	                                <then>
+			    						<echo>Autenticacion tipo BASIC, copiamos el jboss-ejb3.xml</echo>
+			    						<copy file="${basedir}/src/main/jboss/jboss-ejb3.xml" tofile="${project.build.directory}/classes/META-INF/jboss-ejb3.xml"/>
+									</then>
+	                            </if>
+	                        </target>
+                    	</configuration>
+                	</execution>
+            	</executions>
+            	 <dependencies>
+                <dependency>
+                    <groupId>ant-contrib</groupId>
+                    <artifactId>ant-contrib</artifactId>
+                    <version>1.0b3</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>ant</groupId>
+                            <artifactId>ant</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+                </dependencies>
+            </plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<compilerVersion>${java.version}</compilerVersion>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
