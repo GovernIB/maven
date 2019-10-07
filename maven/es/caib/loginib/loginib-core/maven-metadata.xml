@@ -3,9 +3,10 @@
   <groupId>es.caib.loginib</groupId>
   <artifactId>loginib-core</artifactId>
   <versioning>
+    <release>1.0.1</release>
     <versions>
-      <version>1.0.1-SNAPSHOT</version>
+      <version>1.0.1</version>
     </versions>
-    <lastUpdated>20190821093819</lastUpdated>
+    <lastUpdated>20191007104010</lastUpdated>
   </versioning>
 </metadata>
