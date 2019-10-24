@@ -4,8 +4,7 @@
     <parent>
         <groupId>es.caib.scsp</groupId>
         <artifactId>scsp-pinbal</artifactId>
-        <version>1.0.0
-        </version>
+        <version>1.0.0</version>
     </parent>
     <artifactId>scsp-pinbal-scripts</artifactId>
     <version>1.0.0
