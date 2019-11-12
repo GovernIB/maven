@@ -74,26 +74,26 @@
 		<prefix.revision></prefix.revision>
 	</properties>
 
-	<!-- https://github.com/GovernIB/maven/tree/gh-pages
+	<!-- https://github.com/GovernIB/maven/tree/gh-pages -->
 	<repositories>
 	    <repository>
 	      <id>governIB</id>
 	      <url>https://governIB.github.io/maven/maven/</url>
    		</repository>
-   	</repositories>-->
+   	</repositories>
 
   	<modules>
-  		<!-- Modulos comunes -->
-  		<module>sistracom</module>
+  		<!-- Modulos comunes
+  		<module>sistracom</module>-->
 
   		<!-- Apis entre modulos -->
   		<module>sistrages/sistrages-rest-api</module>
   		<module>sistramit/sistramit-rest-api</module>
 
-  		<!-- Modulos aplicacion -->
+  		<!-- Modulos aplicacion
 		<module>sistramit</module>
 		<module>sistrages</module>
-		<module>sistrahelp</module>
+		<module>sistrahelp</module> -->
   	</modules>
 
   	<build>
