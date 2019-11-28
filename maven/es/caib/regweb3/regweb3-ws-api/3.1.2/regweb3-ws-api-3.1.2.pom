@@ -124,8 +124,7 @@
                   <frontend>jaxws</frontend>
                   <databinding>jaxb</databinding>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebHelloWorld.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebHelloWorldWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebHelloWorld</argline>
+                  <argline>-s ${basedir}/code -portname RegWebHelloWorldWs -address http://localhost:8080/regweb3/ws/v3/RegWebHelloWorld</argline>
                 </configuration>
               </execution>
               <execution>
@@ -139,8 +138,7 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebHelloWorldWithSecurity.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebHelloWorldWithSecurityWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebHelloWorldWithSecurity</argline>
+                  <argline>-s ${basedir}/code -portname RegWebHelloWorldWithSecurityWs -address http://localhost:8080/regweb3/ws/v3/RegWebHelloWorldWithSecurity</argline>
                 </configuration>
               </execution>
               <execution>
@@ -154,8 +152,7 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebInfo.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebInfoWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebInfo</argline>
+                  <argline>-s ${basedir}/code -portname RegWebInfoWs -address http://localhost:8080/regweb3/ws/v3/RegWebInfo</argline>
                 </configuration>
               </execution>
               <execution>
@@ -169,8 +166,7 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebPersonas.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebPersonasWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebPersonas</argline>
+                  <argline>-s ${basedir}/code -portname RegWebPersonasWs -address http://localhost:8080/regweb3/ws/v3/RegWebPersonas</argline>
                 </configuration>
               </execution>
               <execution>
@@ -184,8 +180,7 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebRegistroEntrada.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebRegistroEntradaWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebRegistroEntrada</argline>
+                  <argline>-s ${basedir}/code -portname RegWebRegistroEntradaWs -address http://localhost:8080/regweb3/ws/v3/RegWebRegistroEntrada</argline>
                 </configuration>
               </execution>
               <execution>
@@ -199,8 +194,7 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebRegistroSalida.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebRegistroSalidaWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebRegistroSalida</argline>
+                  <argline>-s ${basedir}/code -portname RegWebRegistroSalidaWs -address http://localhost:8080/regweb3/ws/v3/RegWebRegistroSalida</argline>
                 </configuration>
               </execution>
               <execution>
@@ -214,8 +208,7 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/RegWebAsientoRegistral.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname RegWebAsientoRegistralWs -address
-                                        http://localhost:8080/regweb3/ws/v3/RegWebAsientoRegistral</argline>
+                  <argline>-s ${basedir}/code -portname RegWebAsientoRegistralWs -address http://localhost:8080/regweb3/ws/v3/RegWebAsientoRegistral</argline>
                 </configuration>
               </execution>
             </executions>
@@ -231,7 +224,7 @@
                 <version>${cxf.version}</version>
               </dependency>
               <dependency>
-                <groupId>es.caib.regweb3</groupId>
+                <groupId>${project.groupId}</groupId>
                 <artifactId>regweb3-ws-server</artifactId>
                 <version>${project.version}</version>
                 <scope>compile</scope>
