@@ -76,23 +76,32 @@
             <scope>provided</scope>
         </dependency>
 
+
         <dependency>
-            <groupId>org.fundaciobit.plugins</groupId>
-            <artifactId>plugins-api</artifactId>
-            <version>1.0.0</version>
+            <groupId>org.fundaciobit.pluginsib.core</groupId>
+            <artifactId>pluginsib-core</artifactId>
+            <version>2.0.0</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>org.fundaciobit.plugins</groupId>
-            <artifactId>plugin-documentcustody-api</artifactId>
+            <groupId>org.fundaciobit.pluginsib.userinformation</groupId>
+            <artifactId>pluginsib-userinformation-api</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.fundaciobit.pluginsib.documentcustody</groupId>
+            <artifactId>pluginsib-documentcustody-api</artifactId>
             <version>${documentcustody.api.version}</version>
             <scope>provided</scope>
         </dependency>
 
+
         <dependency>
-            <groupId>org.fundaciobit.plugins</groupId>
-            <artifactId>plugin-documentcustody-arxiudigitalcaib</artifactId>
+            <groupId>org.fundaciobit.pluginsib.documentcustody</groupId>
+            <artifactId>pluginsib-documentcustody-arxiudigitalcaib</artifactId>
             <version>${plugin-documentcustody-arxiudigitalcaib.version}</version>
             <scope>provided</scope>
         </dependency>
@@ -103,10 +112,11 @@
             <version>${scanweb.api.version}</version>
         </dependency>
 
+
         <dependency>
-            <groupId>org.fundaciobit.plugins</groupId>
-            <artifactId>plugin-signatureserver-api</artifactId>
-            <version>2.0.0</version>
+            <groupId>org.fundaciobit.pluginsib.signatureserver</groupId>
+            <artifactId>pluginsib-signatureserver-api</artifactId>
+            <version>3.0.0</version>
             <scope>provided</scope>
         </dependency>
 
@@ -118,9 +128,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.fundaciobit.plugins</groupId>
-            <artifactId>plugins-utils-cxf</artifactId>
-            <version>1.0.2</version>
+            <groupId>org.fundaciobit.pluginsib.utils</groupId>
+            <artifactId>pluginsib-utils-cxf</artifactId>
+            <version>2.0.0</version>
             <scope>provided</scope>
         </dependency>
 
@@ -235,11 +245,30 @@
             <artifactId>plugin-distribucion-goib</artifactId>
             <version>${project.version}</version>
         </dependency>
+
+        <!--Test-->
         <dependency>
-            <groupId>org.fundaciobit.pluginsib.validatesignature</groupId>
-            <artifactId>pluginsib-validatesignature-api</artifactId>
-            <version>RELEASE</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.5.6</version>
+            <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.5.6</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc6</artifactId>
+            <version>11.2.0.3</version>
+            <scope>test</scope>
+        </dependency>
+
+
 
     </dependencies>
 
