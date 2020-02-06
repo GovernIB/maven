@@ -163,6 +163,7 @@
                                     <wsdl>https://proves.caib.es/pinbal/ws/recobriment?wsdl</wsdl>
                                     <extraargs>
                                         <extraarg>-xjc-Xts</extraarg>
+                                        <!--extraarg>-xjc-npa</extraarg-->
                                     </extraargs>
                                 </wsdlOption>
                             </wsdlOptions>
