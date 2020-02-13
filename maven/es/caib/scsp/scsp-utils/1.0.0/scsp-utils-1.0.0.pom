@@ -36,7 +36,13 @@
           <type>jar</type>
           <scope>provided</scope>
         </dependency>
-        
+        <dependency>
+            <groupId>es.caib.scsp</groupId>
+            <artifactId>scsp-schemas-xsd-SVDDGTVEHICULODATOSWS01v3</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
