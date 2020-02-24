@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Feb 24 13:31:36 CET 2020
+apifirmasimple-example-web-1.0.0-sources.jar>=
+apifirmasimple-example-web-1.0.0.pom>=
+apifirmasimple-example-web-1.0.0.war>=
