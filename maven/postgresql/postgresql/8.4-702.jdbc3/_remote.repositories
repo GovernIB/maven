@@ -1,5 +1,0 @@
-#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Feb 18 13:33:08 CET 2020
-postgresql-8.4-702.jdbc3-sources.jar>maven-nuxeo=
-postgresql-8.4-702.jdbc3.jar>maven-nuxeo=
-postgresql-8.4-702.jdbc3.pom>maven-nuxeo=
