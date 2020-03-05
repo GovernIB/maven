@@ -39,7 +39,6 @@
     <module>apifirmasimple-connectionmanager-jersey</module>
     <module>apifirmasimple-example-console</module>
     <module>apifirmasimple-example-war</module>
-    <module>apifirmasimple-example-web</module>
   </modules>
 
   <build>
