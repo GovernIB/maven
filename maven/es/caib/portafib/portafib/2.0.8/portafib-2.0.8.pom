@@ -10,20 +10,20 @@
 
     <!-- Llibreries de Firma Simple, Firma Asincrona Simple, Firma Web i Firma en Servidor 
     <module>pluginsib-signatureserver</module>
-    <module>pluginsib-signatureweb</module>-->
+    <module>pluginsib-signatureweb</module>
     <module>apisib</module>
     <module>apifirmasimple</module>
     <module>apifirmaasyncsimple</module>
-    <module>apiplantillafluxsimple</module>    
+    <module>apiplantillafluxsimple</module>   --> 
 
     <!-- PortaFIB 
     <module>utils</module>
     <module>persistence</module>
     <module>model</module>
     <module>jpa</module>
-    <module>ejb</module>
+    <module>ejb</module> -->
     <module>ws</module>
-    <module>scripts</module>
+<!--    <module>scripts</module>
     <module>testjpa</module>
     <module>logic</module>
     <module>back</module>
