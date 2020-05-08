@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <parent>
-    <artifactId>portafib-ws</artifactId>
-    <groupId>es.caib.portafib</groupId>
-    <version>2.0.4</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>es.caib.portafib</groupId>
   <artifactId>portafib-ws-api</artifactId>
@@ -81,6 +76,41 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <artifactId>maven-deploy-plugin</artifactId>
+        <version>2.8.2</version>
+        <configuration>
+          <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.github.github</groupId>
+        <artifactId>site-maven-plugin</artifactId>
+        <version>0.12</version>
+        <executions>
+          <execution>
+            <phase>deploy</phase>
+            <goals>
+              <goal>site</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <message>Maven artifacts for ${project.version}</message>
+          <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+          <noJekyll>true</noJekyll>
+          <branch>refs/heads/gh-pages</branch>
+          <includes>
+            <include>**/*</include>
+          </includes>
+          <path>maven</path>
+          <repositoryName>maven</repositoryName>
+          <repositoryOwner>GovernIB</repositoryOwner>
+          <server>github_governib_maven</server>
+          <merge>true</merge>
+          <dryRun>false</dryRun>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <profiles>
@@ -106,7 +136,8 @@
                   <frontend>jaxws</frontend>
                   <databinding>jaxb</databinding>
                   <outputFile>${basedir}/src/main/resources/wsdl/PortaFIBHelloWorld.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname PortaFIBHelloWorldWs -address http://localhost:8080/portafib/ws/v1/PortaFIBHelloWorld</argline>
+                  <argline>-s ${basedir}/code -portname PortaFIBHelloWorldWs -address
+                    http://localhost:8080/portafib/ws/v1/PortaFIBHelloWorld</argline>
                 </configuration>
               </execution>
               <execution>
@@ -120,7 +151,9 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/PortaFIBUsuariAplicacio.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname PortaFIBUsuariAplicacioWs -address http://localhost:8080/portafib/ws/v1/PortaFIBUsuariAplicacio</argline>
+                  <argline>-s ${basedir}/code -portname PortaFIBUsuariAplicacioWs
+                    -address
+                    http://localhost:8080/portafib/ws/v1/PortaFIBUsuariAplicacio</argline>
                 </configuration>
               </execution>
               <execution>
@@ -134,7 +167,9 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/PortaFIBUsuariEntitat.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname PortaFIBUsuariEntitatWs -address http://localhost:8080/portafib/ws/v1/PortaFIBUsuariEntitat</argline>
+                  <argline>-s ${basedir}/code -portname PortaFIBUsuariEntitatWs
+                    -address
+                    http://localhost:8080/portafib/ws/v1/PortaFIBUsuariEntitat</argline>
                 </configuration>
               </execution>
               <execution>
@@ -148,7 +183,9 @@
                   <genWsdl>true</genWsdl>
                   <verbose>true</verbose>
                   <outputFile>${basedir}/src/main/resources/wsdl/PortaFIBPeticioDeFirma.wsdl</outputFile>
-                  <argline>-s ${basedir}/code -portname PortaFIBPeticioDeFirmaWs -address http://localhost:8080/portafib/ws/v1/PortaFIBPeticioDeFirma</argline>
+                  <argline>-s ${basedir}/code -portname PortaFIBPeticioDeFirmaWs
+                    -address
+                    http://localhost:8080/portafib/ws/v1/PortaFIBPeticioDeFirma</argline>
                 </configuration>
               </execution>
             </executions>
@@ -257,6 +294,17 @@
     </profile>
   </profiles>
   <repositories>
+    <repository>
+      <releases>
+        <updatePolicy>never</updatePolicy>
+      </releases>
+      <snapshots>
+        <updatePolicy>never</updatePolicy>
+      </snapshots>
+      <id>maven-nuxeo</id>
+      <name>Maven Nuxeo Repository</name>
+      <url>https://maven.nuxeo.org/nexus/content/groups/public/</url>
+    </repository>
     <repository>
       <id>java.net-m2</id>
       <name>java.net - Maven 2</name>
@@ -421,12 +469,6 @@
       </exclusions>
     </dependency>
     <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-      <version>2.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.8.2</version>
@@ -437,6 +479,12 @@
       <artifactId>log4j</artifactId>
       <version>1.2.14</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <dependencyManagement>
@@ -450,6 +498,13 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  <distributionManagement>
+    <repository>
+      <id>github_governib_maven</id>
+      <name>GitHub GovernIB Maven Repository</name>
+      <url>file://${project.build.directory}/mvn-repo</url>
+    </repository>
+  </distributionManagement>
   <properties>
     <version.org.jboss.spec.jboss.javaee.6.0>3.0.0.Final</version.org.jboss.spec.jboss.javaee.6.0>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
