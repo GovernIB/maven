@@ -26,6 +26,7 @@
     <modules>
         <module>scripts</module>
         <module>utils</module>
+	<module>scsp-schemas-xsd-NIVRENTIv3-test</module>
     </modules>
     <dependencies>
         <dependency>
