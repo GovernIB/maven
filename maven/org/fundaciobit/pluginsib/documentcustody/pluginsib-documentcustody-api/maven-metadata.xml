@@ -3,10 +3,10 @@
   <groupId>org.fundaciobit.pluginsib.documentcustody</groupId>
   <artifactId>pluginsib-documentcustody-api</artifactId>
   <versioning>
-    <release>4.0.0</release>
+    <release>4.0.1</release>
     <versions>
-      <version>4.0.0</version>
+      <version>4.0.1</version>
     </versions>
-    <lastUpdated>20190917085659</lastUpdated>
+    <lastUpdated>20200520085717</lastUpdated>
   </versioning>
 </metadata>
