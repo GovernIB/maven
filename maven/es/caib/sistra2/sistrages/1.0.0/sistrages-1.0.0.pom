@@ -14,7 +14,7 @@
 		<module>sistrages-core</module>
 		<module>sistrages-rest-ws</module>
 		<module>sistrages-frontend</module>
-		<module>sistrages-ear</module>
+		<!-- <module>sistrages-ear</module> -->
 	</modules>
 
 </project>
