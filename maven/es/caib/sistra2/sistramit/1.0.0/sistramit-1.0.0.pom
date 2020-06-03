@@ -15,6 +15,6 @@
 		<module>sistramit-core</module>
 		<module>sistramit-rest-ws</module>
 		<module>sistramit-frontend</module>
-		<module>sistramit-ear</module>
+		<!--  <module>sistramit-ear</module>-->
 	</modules>
 </project>
