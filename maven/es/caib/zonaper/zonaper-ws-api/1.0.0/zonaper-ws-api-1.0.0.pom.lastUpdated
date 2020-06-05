@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jun 05 11:11:26 CEST 2020
+https\://maven.repository.redhat.com/ga/.lastUpdated=1591348286261
+https\://repo.maven.apache.org/maven2/.lastUpdated=1591348286679
+https\://governib.github.io/maven/maven/.error=
+https\://governib.github.io/maven/maven/.lastUpdated=1591348285954
+http\://repository.primefaces.org/.error=
+https\://repo.maven.apache.org/maven2/.error=
+http\://repository.primefaces.org/.lastUpdated=1591348286566
+https\://maven.repository.redhat.com/ga/.error=
