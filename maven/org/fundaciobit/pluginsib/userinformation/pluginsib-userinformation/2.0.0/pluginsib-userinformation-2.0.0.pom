@@ -10,6 +10,7 @@
     <module>api</module>
     <module>ldap</module>
     <module>database</module>
+    <module>keycloak</module>
   </modules>
   <dependencies>
     <dependency>
@@ -45,7 +46,6 @@
         <updatePolicy>never</updatePolicy>
       </snapshots>
     </repository>
-    <!-- REQUERIM  MMS Computing & Alfresco  -->
     <repository>
       <id>github-governib-maven-repos</id>
       <name>GitHub GovernIB Maven Repository</name>
