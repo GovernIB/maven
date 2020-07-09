@@ -295,6 +295,11 @@
   </profiles>
   <repositories>
     <repository>
+      <id>github-governib-maven</id>
+      <name>GitHub GovernIB Maven Repository</name>
+      <url>https://governib.github.io/maven/maven/</url>
+    </repository>
+    <repository>
       <releases>
         <updatePolicy>never</updatePolicy>
       </releases>
