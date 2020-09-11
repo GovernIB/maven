@@ -1,7 +1,7 @@
 
-# Scripts per instal·lar automàticament certificats emprats dins desenvolupaments del GOIB dins la màquina virtual Java
+# Script per instal·lar certificats emprats dins desenvolupaments del GOIB dins Java
 
-L'script davalla automàticament els certificats d'una sèrie de servidors i els incorpora automàticament al fitxer `cacerts` de la màquina virtual
+L'script `installCerts.bat` davalla automàticament els certificats d'una sèrie de servidors i els incorpora automàticament al fitxer `cacerts` de la màquina virtual
 
 ### Requisits
 
