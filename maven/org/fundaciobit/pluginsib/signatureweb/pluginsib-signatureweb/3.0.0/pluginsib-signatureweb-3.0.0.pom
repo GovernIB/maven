@@ -10,7 +10,7 @@
   <parent>
     <groupId>es.caib.portafib</groupId>
     <artifactId>portafib</artifactId>
-    <version>2.0.11</version>
+    <version>2.0.12</version>
   </parent>
 
   <properties>
@@ -50,6 +50,12 @@
       <id>passarelaweb-v1</id>
       <modules>
         <module>portafib</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>fortress</id>
+      <modules>
+        <module>fortress</module>
       </modules>
     </profile>
   </profiles>
