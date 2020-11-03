@@ -29,9 +29,9 @@ if %jver% LSS 160 (
 
 REM Java 11 canvia el directori del fitxer
 IF %jver% LSS 1100 (
-	set "TRUSTSTORE=%JAVA_HOME%\jre\lib\security\cacerts"
+	set TRUSTSTORE="%JAVA_HOME%\jre\lib\security\cacerts"
 ) else (
-	set "TRUSTSTORE=%JAVA_HOME%\lib\security\cacerts"
+	set TRUSTSTORE="%JAVA_HOME%\lib\security\cacerts"
 )
 
 
