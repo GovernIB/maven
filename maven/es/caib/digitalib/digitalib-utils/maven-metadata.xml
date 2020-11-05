@@ -3,10 +3,10 @@
   <groupId>es.caib.digitalib</groupId>
   <artifactId>digitalib-utils</artifactId>
   <versioning>
-    <release>1.0.3</release>
+    <release>1.0.5</release>
     <versions>
-      <version>1.0.3</version>
+      <version>1.0.5</version>
     </versions>
-    <lastUpdated>20200506065019</lastUpdated>
+    <lastUpdated>20201105080304</lastUpdated>
   </versioning>
 </metadata>
