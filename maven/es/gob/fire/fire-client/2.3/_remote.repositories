@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 12 13:21:47 CET 2020
+fire-client-2.3.jar>=
+fire-client-2.3.pom>=
