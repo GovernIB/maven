@@ -3,10 +3,10 @@
   <groupId>es.caib.rolsac</groupId>
   <artifactId>rolsacAPI</artifactId>
   <versioning>
-    <release>1.8.0</release>
+    <release>1.8.3</release>
     <versions>
-      <version>1.8.0</version>
+      <version>1.8.3</version>
     </versions>
-    <lastUpdated>20200326155056</lastUpdated>
+    <lastUpdated>20210201112345</lastUpdated>
   </versioning>
 </metadata>
