@@ -93,3 +93,13 @@ Tot projecte CAIB, desenvolupat en maven, al final del pom.xml ha d'incloue aque
 <tr><td>
 </td></tr>
 </table>
+
+
+
+
+# Certificats GOIB
+
+La solució a errors d'aquest tipus  ```Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target``` la podeu trobar [AQUÍ](https://github.com/GovernIB/maven/tree/binaris/certificatsgoib)
+
+
+
