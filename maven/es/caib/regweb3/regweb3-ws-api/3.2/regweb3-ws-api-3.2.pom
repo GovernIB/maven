@@ -342,6 +342,7 @@
             </executions>
             <configuration>
               <verbose>true</verbose>
+              <goalPrefix>wsconsume</goalPrefix>
               <extension>true</extension>
               <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
               <targetPackage>es.caib.regweb3.ws.api.v3</targetPackage>
