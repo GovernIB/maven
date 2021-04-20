@@ -20,6 +20,18 @@ L'script guarda un log dins el fitxer `log.txt`. Cada execució comença amb la 
 
 > Nota: Si la màquina virtual està instal·lada dins el directori de windows `C:\Program Files` es possible que calgui executar l'script com a administrador per tenir permissos per modificar el fitxer `cacerts`
 
+
+### Linux
+
+(1) Executar installCerts.bat en una màquina windows.
+(2) Copiar installCerts.sh i tots els fitxers .pem generats en un directori de la màquina linux
+(3) Editar el installCerts.sh i modificar la ruta al JAVA_HOME. Guardar.
+(4) Afegir permisos d'execució al fitxer installCerts.sh:  $chmod 777 +x installCerts.sh 
+(5) Executar installCerts.sh  amb sudo: $sudo installCerts.sh
+
+
+
+
 ### Exemple
 
 ```
