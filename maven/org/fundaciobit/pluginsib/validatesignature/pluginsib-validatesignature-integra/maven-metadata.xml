@@ -3,10 +3,10 @@
   <groupId>org.fundaciobit.pluginsib.validatesignature</groupId>
   <artifactId>pluginsib-validatesignature-integra</artifactId>
   <versioning>
-    <release>2.0.0</release>
+    <release>2.0.6</release>
     <versions>
-      <version>2.0.0</version>
+      <version>2.0.6</version>
     </versions>
-    <lastUpdated>20200115113341</lastUpdated>
+    <lastUpdated>20210420110145</lastUpdated>
   </versioning>
 </metadata>
