@@ -140,8 +140,8 @@
                 <configuration>
                     <mainClass>es.caib.scsp.utils.cxf.authentication.AuthenticatorReplacer</mainClass>
                     <arguments>
-                        <argument>$xestib_pinbal</argument>
-                        <argument>xestib_pinbal</argument>
+                        <argument>$ajuviv_pinbal</argument>
+                        <argument>ajuviv_pinbal</argument>
                     </arguments>
                 </configuration>
             </plugin>
