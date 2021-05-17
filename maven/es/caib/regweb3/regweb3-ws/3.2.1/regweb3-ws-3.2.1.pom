@@ -15,9 +15,9 @@
     <name>RegWeb3 - WS</name>
 
     <modules>
-        <module>regweb3_server</module>
+       <!-- <module>regweb3_server</module>-->
         <module>regweb3_api</module>
-        <module>regweb3_api_axis</module>
+       <!-- <module>regweb3_api_axis</module>-->
     </modules>
    
     <!--<repositories>
