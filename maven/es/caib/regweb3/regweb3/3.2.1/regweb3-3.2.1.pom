@@ -35,7 +35,7 @@
 
   <modules>
    <!-- <module>scripts</module>-->
-    <module>utils</module>
+    <!--<module>utils</module>-->
    <!-- <module>model</module>-->
   <!--  <module>persistence</module>-->
     <module>ws</module>
