@@ -3,10 +3,10 @@
   <groupId>es.caib.regweb3</groupId>
   <artifactId>plugin-postproceso</artifactId>
   <versioning>
-    <release>3.2.1</release>
+    <release>3.2.2</release>
     <versions>
-      <version>3.2.1</version>
+      <version>3.2.2</version>
     </versions>
-    <lastUpdated>20210610053331</lastUpdated>
+    <lastUpdated>20210709122520</lastUpdated>
   </versioning>
 </metadata>
