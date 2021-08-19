@@ -4,8 +4,8 @@
   <artifactId>genapp-web</artifactId>
   <versioning>
     <versions>
-      <version>2.0.0-SNAPSHOT</version>
+      <version>1.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210719090328</lastUpdated>
+    <lastUpdated>20210819062102</lastUpdated>
   </versioning>
 </metadata>
