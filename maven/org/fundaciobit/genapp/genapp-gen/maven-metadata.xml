@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.genapp</groupId>
   <artifactId>genapp-gen</artifactId>
   <versioning>
-    <release>1.0.3</release>
     <versions>
-      <version>1.0.3</version>
+      <version>1.1-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210705092422</lastUpdated>
+    <lastUpdated>20210819062157</lastUpdated>
   </versioning>
 </metadata>
