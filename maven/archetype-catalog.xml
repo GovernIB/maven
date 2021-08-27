@@ -9,5 +9,11 @@
       <version>1.0.0</version>
       <description>Plantilla de ProjecteBase per Java EE 8, JBOSS 7.2 i JDK 11</description>
     </archetype>
+    <archetype>
+      <groupId>es.caib.projectebase</groupId>
+      <artifactId>projectebase-archetype</artifactId>
+      <version>1.0.10</version>
+      <description>Plantilla de ProjecteBase per Java EE 8, JBOSS 7.2 i JDK 11</description>
+    </archetype>
   </archetypes>
 </archetype-catalog>
