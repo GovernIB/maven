@@ -1,0 +1,116 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>es.caib.portafib</groupId>
+  <artifactId>portafib-ws</artifactId>  
+  <packaging>pom</packaging>
+
+  <parent>
+    <groupId>es.caib.portafib</groupId>
+    <artifactId>portafib</artifactId>
+    <version>2.0.21</version>
+  </parent>
+
+  <name>PortaFIB WS</name>
+
+  <modules>
+
+    <module>indra_callback_api</module>
+    <module>portafib_callback_api</module>
+    <module>portafib_revisordefirma_rest_api</module>
+
+    <module>portafib_externalsignature_rest_api</module>
+    <module>portafib_externalsignature_rest_jersey</module>
+
+    <!-- NOTA: El mòdul 'portafib_server' conté tant l'API v1 com l'API v2, que 
+         s'activen segons els profiles seleccionats. S'ha tengut que fer en un
+         sol mòdul a causa de les limitacions dels WS-EJB (llegir ./server/readme.txt).
+         Sempre esta actiu però pot passar que es generei un jar buit si no 
+         es defineix cap profile de WS. -->
+    <module>portafib_server</module> 
+
+  </modules>
+
+  <profiles>
+
+
+    <profile>
+      <id>ws-portafib-v1</id>
+      <modules>
+        <module>portafib_server</module>
+        <module>portafib_api</module>
+        <module>portafib_api_example</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>passarelaweb-v1</id>
+      <modules>
+        <module>portafib_server</module>
+        <module>portafib_api_passarela_web</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>passarelaserver-v1</id>
+      <modules>
+        <module>portafib_server</module>
+        <module>portafib_api_passarela_servidor</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>ws-portafirmas</id>
+      <modules>
+        <module>indra_server</module>
+        <module>indra_api</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>ws-portafirmas-callback-server</id>
+      <modules>
+        <module>indra_callback_server</module>	   
+      </modules>
+    </profile>
+
+    <profile>
+      <id>ws-portafib-callback-server</id>
+      <modules>
+        <module>portafib_callback_beans</module> 
+        <module>portafib_callback_server_rest</module>
+        <module>portafib_callback_server</module>	   
+        <module>portafib_callback_server_web</module>	   
+      </modules>
+    </profile>
+
+  </profiles>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <configuration>
+            <encoding>UTF-8</encoding>
+          </configuration>
+        </plugin>
+
+      </plugins>
+    </pluginManagement>
+
+  </build>
+
+</project>
