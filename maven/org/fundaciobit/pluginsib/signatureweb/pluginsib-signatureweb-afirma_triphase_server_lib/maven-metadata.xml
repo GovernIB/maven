@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.pluginsib.signatureweb</groupId>
   <artifactId>pluginsib-signatureweb-afirma_triphase_server_lib</artifactId>
   <versioning>
-    <release>3.0.1</release>
     <versions>
-      <version>3.0.1</version>
+      <version>3.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20200505084400</lastUpdated>
+    <lastUpdated>20211111124002</lastUpdated>
   </versioning>
 </metadata>
