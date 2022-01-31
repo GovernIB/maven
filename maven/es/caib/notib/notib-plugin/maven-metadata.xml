@@ -3,10 +3,10 @@
   <groupId>es.caib.notib</groupId>
   <artifactId>notib-plugin</artifactId>
   <versioning>
-    <release>1.1.5</release>
+    <release>1.1.16</release>
     <versions>
-      <version>1.1.5</version>
+      <version>1.1.16</version>
     </versions>
-    <lastUpdated>20201023125718</lastUpdated>
+    <lastUpdated>20220131074036</lastUpdated>
   </versioning>
 </metadata>
