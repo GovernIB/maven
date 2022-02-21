@@ -3,16 +3,10 @@
   <groupId>org.fundaciobit.pluginsib.arxiu</groupId>
   <artifactId>pluginsib-arxiu-filesystem</artifactId>
   <versioning>
-    <release>2.0.16</release>
+    <release>2.0.17</release>
     <versions>
-      <version>2.0.8</version>
-      <version>2.0.9</version>
-      <version>2.0.10</version>
-      <version>2.0.13</version>
-      <version>2.0.14</version>
-      <version>2.0.15</version>
-      <version>2.0.16</version>
+      <version>2.0.17</version>
     </versions>
-    <lastUpdated>20220126110403</lastUpdated>
+    <lastUpdated>20220221073226</lastUpdated>
   </versioning>
 </metadata>
