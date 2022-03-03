@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.pluginsib.userinformation</groupId>
   <artifactId>pluginsib-userinformation-keycloak</artifactId>
   <versioning>
-    <release>2.0.1</release>
     <versions>
-      <version>2.0.1</version>
+      <version>3.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210520110621</lastUpdated>
+    <lastUpdated>20220303101704</lastUpdated>
   </versioning>
 </metadata>
