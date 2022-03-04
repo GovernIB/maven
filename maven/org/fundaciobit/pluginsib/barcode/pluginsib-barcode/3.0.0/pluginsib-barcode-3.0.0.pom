@@ -14,8 +14,6 @@
   </modules>
   <properties>
 		<pluginsib.barcode.api.version>3.0.0</pluginsib.barcode.api.version>
-		<pluginsib.barcode.impl.version>3.0.0-SNAPSHOT</pluginsib.barcode.impl.version>
-
 		<maven.compiler.release>11</maven.compiler.release>
 		<maven.compiler.target>11</maven.compiler.target>
 		<maven.compiler.source>11</maven.compiler.source>
