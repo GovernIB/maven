@@ -25,18 +25,18 @@
 <!--			<version>1.5</version>-->
 <!--			<scope>provided</scope>-->
 <!--		</dependency>-->
-		<dependency>
-			<groupId>javax.ejb</groupId>
-			<artifactId>ejb-api</artifactId>
-			<version>3.0</version>
-			<scope>provided</scope>
-		</dependency>
-  		<dependency>
-			<groupId>jboss</groupId>
-			<artifactId>jboss-jmx</artifactId>
-			<version>4.2.2.GA</version>
-			<scope>provided</scope>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>javax.ejb</groupId>-->
+<!--			<artifactId>ejb-api</artifactId>-->
+<!--			<version>3.0</version>-->
+<!--			<scope>provided</scope>-->
+<!--		</dependency>-->
+<!--  		<dependency>-->
+<!--			<groupId>jboss</groupId>-->
+<!--			<artifactId>jboss-jmx</artifactId>-->
+<!--			<version>4.2.2.GA</version>-->
+<!--			<scope>provided</scope>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
