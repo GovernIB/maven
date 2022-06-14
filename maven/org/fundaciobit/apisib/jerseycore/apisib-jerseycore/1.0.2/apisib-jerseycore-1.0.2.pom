@@ -29,17 +29,18 @@
             <artifactId>apisib-core</artifactId>
             <version>1.0.0</version>
         </dependency>
-
+<!--
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>1.8</version>
+            <version>1.19.4</version>
         </dependency>
+		-->
 
         <dependency>
             <groupId>com.sun.jersey</groupId>
             <artifactId>jersey-json</artifactId>
-            <version>1.8</version>
+            <version>1.19.4</version>
             <exclusions>
 
                 <exclusion>
@@ -65,13 +66,13 @@
             <artifactId>jersey-apache-client4</artifactId>
             <version>1.19.4</version>
         </dependency>
-
+<!-- 
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.5.8</version>
         </dependency>
-
+ -->
     </dependencies>
 
 </project>
