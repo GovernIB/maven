@@ -3,10 +3,10 @@
   <groupId>es.caib.distribucio</groupId>
   <artifactId>distribucio-backoffice-utils</artifactId>
   <versioning>
-    <release>0.9.29</release>
+    <release>0.9.43</release>
     <versions>
-      <version>0.9.29</version>
+      <version>0.9.43</version>
     </versions>
-    <lastUpdated>20200831110702</lastUpdated>
+    <lastUpdated>20220713135143</lastUpdated>
   </versioning>
 </metadata>
