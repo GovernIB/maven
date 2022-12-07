@@ -62,24 +62,38 @@
 			<artifactId>portafib-ws-api</artifactId>
 			<version>${portafib.version}</version>
 		</dependency>
-		<!-- Signatura en el servidor amb PortaFib -->
+		
 		<dependency>
-			<groupId>org.fundaciobit.plugins</groupId>
-			<artifactId>plugin-signatureserver-api</artifactId>
-			<version>2.0.0</version>
+			<artifactId>apifirmasimple-api</artifactId>
+			<groupId>org.fundaciobit.apisib.apifirmasimple</groupId>
+			<version>1.0.3</version>       	
 		</dependency>
 		<dependency>
-			<groupId>org.fundaciobit.plugins</groupId>
-			<artifactId>plugin-signatureserver-portafib</artifactId>
-			<version>2.0.0</version>
+			<artifactId>apifirmasimple-jersey</artifactId>
+			<groupId>org.fundaciobit.apisib.apifirmasimple</groupId>
+			<version>1.0.3</version>
 		</dependency>
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
-			<scope>provided</scope>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.8</version>
 		</dependency>
-		<!-- Fi signatura en el servidor amb PortaFib -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.8</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.xml.bind</groupId>
+					<artifactId>jaxb-impl</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.codehaus.jettison</groupId>
+					<artifactId>jettison</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
 		<dependency>
 			<groupId>es.caib.regweb3</groupId>
 			<artifactId>regweb3-ws-api</artifactId>
@@ -130,11 +144,6 @@
 			<version>${bouncycastle.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>${jackson.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-jcl</artifactId>
 			<version>${slf4j.version}</version>
@@ -154,6 +163,21 @@
 					<groupId>log4j</groupId>
 					<artifactId>log4j</artifactId>
 				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jersey</groupId>
+					<artifactId>jersey-client</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.fundaciobit.pluginsib.arxiu</groupId>
+			<artifactId>pluginsib-arxiu-filesystem</artifactId>
+			<version>${arxiu.filesystem.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
 			</exclusions>
 		</dependency>
 		<dependency>
@@ -162,6 +186,18 @@
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>apb</id>
+			<dependencies>
+				<dependency>
+					<groupId>es.caib.distribucio</groupId>
+					<artifactId>distribucio-plugin-apbfiles</artifactId>
+					<version>0.9</version>
+				</dependency>
+			</dependencies>	
+		</profile>
+	</profiles>
 	<build>
 		<plugins>
 			<plugin>
@@ -178,7 +214,6 @@
 						<configuration>
 							<wsdlUrls>
 								<wsdlUrl>${basedir}/wsdl/cws/CWS.wsdl</wsdlUrl>
-								<wsdlUrl>${basedir}/wsdl/sistra-bantel/BackofficeFacade.wsdl</wsdlUrl>
 							</wsdlUrls>
 							<vmArgs>
 								<vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
@@ -195,7 +230,7 @@
 		<repository>
 			<id>github-governib-maven-repos</id>
 			<name>GitHub GovernIB Maven Repository</name>
-			<url>http://GovernIB.github.io/maven/maven/</url>
+			<url>http://governib.github.io/maven/maven/</url>
 		</repository>
 		<repository>
 			<name>Local Maven repository</name>
