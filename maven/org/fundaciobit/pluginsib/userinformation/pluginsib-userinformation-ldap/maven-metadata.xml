@@ -4,8 +4,8 @@
   <artifactId>pluginsib-userinformation-ldap</artifactId>
   <versioning>
     <versions>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>3.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20220610062656</lastUpdated>
+    <lastUpdated>20230317123421</lastUpdated>
   </versioning>
 </metadata>
