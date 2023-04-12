@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>pluginsib-estructuraorganitzativa</artifactId>
+	<groupId>org.fundaciobit.pluginsib.estructuraorganitzativa</groupId>
+	<version>2.0.0</version>
+	<packaging>pom</packaging>
+	<name>PluginsIB - Estructura Organitzativa</name>
+    	<parent>
+		<groupId>es.caib.enviafib</groupId>
+		<artifactId>enviafib-pluginsib</artifactId>
+		<version>1.0.6</version>
+	</parent>
+
+	<modules>
+		<module>api</module>
+		<module>mock</module>
+		<module>database</module>
+        <module>ldapcaib</module>
+	</modules>
+	<properties>
+		<!-- Propietats que afecten els plugins -->
+		<maven.compiler.release>11</maven.compiler.release>
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.fundaciobit.pluginsib.core</groupId>
+			<artifactId>pluginsib-core</artifactId>
+			<version>2.0.2</version>
+		</dependency>
+	</dependencies>
+    <build>
+    <plugins>
+    <!-- Gestió de requisits del build -->
+			<!-- Veure: https://maven.apache.org/enforcer/enforcer-rules/index.html -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M3</version>
+				<configuration>
+					<rules>
+						<!-- Fixam mínim Maven 3.6 i Java 11 -->
+						<requireMavenVersion>
+							<version>3.6.1</version>
+						</requireMavenVersion>
+						<requireJavaVersion>
+							<version>11</version>
+						</requireJavaVersion>
+						<!-- Per detectar problemes de dependències -->
+						<banDuplicatePomDependencyVersions/>
+						<dependencyConvergence/>
+						<!-- <reactorModuleConvergence/> -->
+					</rules>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+    </plugins>
+    </build>
+</project>
