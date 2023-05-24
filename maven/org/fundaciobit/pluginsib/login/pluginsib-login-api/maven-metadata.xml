@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fundaciobit.pluginsib.login</groupId>
+  <artifactId>pluginsib-login-api</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20230524123253</lastUpdated>
+  </versioning>
+</metadata>
