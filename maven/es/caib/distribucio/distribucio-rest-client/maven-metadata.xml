@@ -3,10 +3,10 @@
   <groupId>es.caib.distribucio</groupId>
   <artifactId>distribucio-rest-client</artifactId>
   <versioning>
-    <release>0.9.47</release>
+    <release>0.9.49</release>
     <versions>
-      <version>0.9.47</version>
+      <version>0.9.49</version>
     </versions>
-    <lastUpdated>20221207130014</lastUpdated>
+    <lastUpdated>20230710075309</lastUpdated>
   </versioning>
 </metadata>
