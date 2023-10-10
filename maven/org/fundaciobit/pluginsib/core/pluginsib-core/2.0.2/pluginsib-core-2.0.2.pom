@@ -6,9 +6,9 @@
   <version>2.0.2</version>
   <packaging>jar</packaging>
   <name>PluginsIB - Core</name>
-  <!--Repositoris de us general-->
+  <!--Repositoris de us general -->
   <repositories>
-    <!--Gestió de documentacio-->
+    <!--Gestió de documentacio -->
     <repository>
       <id>maven-nuxeo</id>
       <name>Maven Nuxeo Repository</name>
@@ -23,7 +23,7 @@
         <updatePolicy>never</updatePolicy>
       </snapshots>
     </repository>
-    <!-- REQUERIM  MMS Computing & Alfresco  -->
+    <!-- -->
     <repository>
       <id>github-governib-maven-repos</id>
       <name>GitHub GovernIB Maven Repository</name>
@@ -31,7 +31,7 @@
     </repository>
   </repositories>
   <dependencies>
-    <!--  IMPORTANT !!!! Aquest projecte NOMES ha de dependre de les classes del JDK -->
+    <!-- IMPORTANT !!!! Aquest projecte NOMES ha de dependre de les classes del JDK -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -137,7 +137,7 @@
           <path>maven</path>
           <!-- github repo name -->
           <repositoryName>maven</repositoryName>
-          <!-- github username or organization  -->
+          <!-- github username or organization -->
           <repositoryOwner>GovernIB</repositoryOwner>
           <server>github_governib_maven</server>
           <merge>true</merge>
@@ -162,11 +162,13 @@
     </repository>
   </distributionManagement>
   <!--   COM UTILITZAR: AFEGIR AQUEST CODI AL pom.xml    -->
-  <!--        <repositories>
-  <repository>
-    <id>github-governib-maven-repos</id>
-    <name>GitHub GovernIB Maven Repository</name>
-    <url>http://GovernIB.github.io/maven/maven/</url>
-  </repository>
-</repositories>  -->
+  <!--
+  <repositories>
+    <repository>
+      <id>github-governib-maven-repos</id>
+      <name>GitHub GovernIB Maven Repository</name>
+      <url>http://GovernIB.github.io/maven/maven/</url>
+    </repository>
+  </repositories>  
+  -->
 </project>
