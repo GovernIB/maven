@@ -3,10 +3,10 @@
   <groupId>es.caib.regweb3</groupId>
   <artifactId>regweb3-sir-ws-server</artifactId>
   <versioning>
-    <release>3.2.5</release>
+    <release>3.3.1</release>
     <versions>
-      <version>3.2.5</version>
+      <version>3.3.1</version>
     </versions>
-    <lastUpdated>20220926094651</lastUpdated>
+    <lastUpdated>20231107134757</lastUpdated>
   </versioning>
 </metadata>
