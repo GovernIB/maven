@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>es.caib.regweb3</groupId>
+        <artifactId>regweb3-sir</artifactId>
+        <version>3.3.2</version>
+    </parent>
+
+    <artifactId>regweb3-sir-api</artifactId>
+    <version>3.3.2</version>
+    <packaging>ejb</packaging>
+
+    <name>RegWeb3 - SIR - API</name>
+
+    <build>
+
+        <plugins>
+
+            <!-- Sempre fer net -->
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ejb-plugin</artifactId>
+                <configuration>
+                    <ejbVersion>3.2</ejbVersion>
+                </configuration>
+            </plugin>
+
+            <!-- Generamos codigo a partir del wsdl -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>axistools-maven-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+
+                    <execution>
+                        <id>generate-sources-ws_sir6a</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceDirectory>${basedir}/src/main/resources/wsdl/axis</sourceDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>WS_SIR6_A.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageSpace>es.caib.regweb3.sir.ws.api.wssir6a</packageSpace>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>generate-sources-ws_sir6b</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceDirectory>${basedir}/src/main/resources/wsdl/axis</sourceDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>WS_SIR6_B.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageSpace>es.caib.regweb3.sir.ws.api.wssir6b</packageSpace>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>generate-sources-ws_sir7</id>
+                        <phase>generate-sources</phase>
+                        <configuration>
+                            <sourceDirectory>${basedir}/src/main/resources/wsdl/axis</sourceDirectory>
+                            <wsdlFiles>
+                                <wsdlFile>WS_SIR7.wsdl</wsdlFile>
+                            </wsdlFiles>
+                            <packageSpace>es.caib.regweb3.sir.ws.api.wssir7</packageSpace>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.axis</groupId>
+                        <artifactId>axis</artifactId>
+                        <version>1.4</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>javax.mail</groupId>
+                        <artifactId>mail</artifactId>
+                        <version>1.4.1</version>
+                    </dependency>
+                    <!--<dependency>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>activation</artifactId>
+                        <version>1.1</version>
+                    </dependency>-->
+                </dependencies>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+
+    <dependencies>
+
+        <!-- Especificacions i llibreries proporcionades per JBoss -->
+
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>es.caib.regweb3</groupId>
+            <artifactId>regweb3-utils</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>es.caib.regweb3</groupId>
+            <artifactId>regweb3-sir-core</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--Externas-->
+        <dependency>
+            <groupId>org.apache.axis</groupId>
+            <artifactId>axis</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>axis</groupId>
+            <artifactId>axis-jaxrpc</artifactId>
+            <version>1.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.axis</groupId>
+            <artifactId>axis-saaj</artifactId>
+            <version>1.4</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>wsdl4j</groupId>
+            <artifactId>wsdl4j</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.fundaciobit.pluginsib.core</groupId>
+            <artifactId>pluginsib-core</artifactId>
+            <version>${pluginsib-core.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.fundaciobit.pluginsib.documentcustody</groupId>
+            <artifactId>pluginsib-documentcustody-api</artifactId>
+            <version>${documentcustody.api.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>6.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
