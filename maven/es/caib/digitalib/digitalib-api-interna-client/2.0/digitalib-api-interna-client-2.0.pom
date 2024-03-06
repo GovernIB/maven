@@ -3,7 +3,7 @@
     <groupId>es.caib.digitalib</groupId>
     <artifactId>digitalib-api-interna-client</artifactId>
     <packaging>jar</packaging>
-    <name>DigitalIB - Api - Interna - Client</name>
+    <name>DigitalIB - API Rest - Interna - Client</name>
     <version>2.0</version>
     <build>
         <plugins>
