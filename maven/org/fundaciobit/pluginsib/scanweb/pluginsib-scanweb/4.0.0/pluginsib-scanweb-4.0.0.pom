@@ -21,13 +21,17 @@
         <module>filescan-plugin</module>
         <module>digitalib-plugin</module>
         <module>digitalibmassive-plugin</module>
+        <module>digitalibmassive2-plugin</module>
+        <!--
         <module>scanweb-tester</module>
+        <module>scanweb-springboot-tester</module>
+        -->
     </modules>
     <dependencies>
         <dependency>
             <groupId>org.fundaciobit.pluginsib.core</groupId>
             <artifactId>pluginsib-core</artifactId>
-            <version>2.0.0</version>
+            <version>2.0.2</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
