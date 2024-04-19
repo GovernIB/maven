@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>es.caib.portafib</groupId>
+  <artifactId>portafib-api-interna-client-revisors-v1</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20240419.115436</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20240419115436</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.0-20240419.115436-1</value>
+        <updated>20240419115436</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20240419.115436-1</value>
+        <updated>20240419115436</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
