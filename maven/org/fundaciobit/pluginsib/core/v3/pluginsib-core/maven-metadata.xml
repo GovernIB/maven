@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fundaciobit.pluginsib.core.v3</groupId>
+  <artifactId>pluginsib-core</artifactId>
+  <versioning>
+    <versions>
+      <version>3.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240523084155</lastUpdated>
+  </versioning>
+</metadata>
