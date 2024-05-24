@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.fundaciobit.pluginsib.core.v3</groupId>
+    <artifactId>pluginsib-core</artifactId>
+    <version>3.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>PluginsIB - Core</name>
+    <parent>
+        <artifactId>
+            caib-artifacts-github-governib-distribution-with-jdk11-jboss72</artifactId>
+        <groupId>es.caib.maven</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <!-- IMPORTANT !!!! -->
+        <!-- Aquest projecte NOMES ha de dependre de les classes del JDK -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                        <configuration>
+                            <includes>
+                                <include>**/plugins/test/**</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!--   COM UTILITZAR: AFEGIR AQUEST CODI AL pom.xml    -->
+    <!--
+    <repositories>
+        <repository>
+          <id>github-governib-maven-repos</id>
+          <name>GitHub GovernIB Maven Repository</name>
+          <url>http://GovernIB.github.io/maven/maven/</url>
+        </repository>
+    </repositories>  
+    -->
+</project>
