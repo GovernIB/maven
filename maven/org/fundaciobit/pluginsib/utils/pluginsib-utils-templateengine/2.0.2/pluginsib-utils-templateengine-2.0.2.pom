@@ -5,7 +5,7 @@
 	<artifactId>pluginsib-utils-templateengine</artifactId>
 	<version>2.0.2</version>
 	<packaging>jar</packaging>
-	<name>PluginsIB - Utils - TemplateEngine</name>
+	<name>PluginsIB - Utils - TemplateEngine </name>
 	<parent>
 		<groupId>org.fundaciobit.pluginsib.utils</groupId>
 		<artifactId>pluginsib-utils</artifactId>

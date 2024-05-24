@@ -3,9 +3,10 @@
   <groupId>org.fundaciobit.pluginsib.utils</groupId>
   <artifactId>pluginsib-utils-templateengine</artifactId>
   <versioning>
+    <release>2.0.2</release>
     <versions>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>2.0.2</version>
     </versions>
-    <lastUpdated>20240523090200</lastUpdated>
+    <lastUpdated>20240524080500</lastUpdated>
   </versioning>
 </metadata>
