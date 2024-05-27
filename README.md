@@ -14,7 +14,7 @@ Per les solucions que utilitzin JDK11 i JBOSS 7.2 s'ha de fer que el pom arrel t
     </parent>
 
 
-# JDK11 + JBOSS7.2 + DISTRIBUCIÓ_GITHUB_GOVERNIB_MAVEN
+# JDK11 + JBOSS7.2 + Distribució Github GovernIB
 
 Per les solucions que utilitzin JDK11 i JBOSS 7.2 i a més al fer deploy pugin els artifacs a a la branca gh-pages https://github.com/GovernIB/maven, llavors de s'ha de fer que el pom arrel tengui el següent parent:
 
