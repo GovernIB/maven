@@ -14,7 +14,7 @@
     </developers>
     <modules>
         <module>caib-artifacts-jdk11-jboss72</module>
-        <module>caib-artifacts-github-governib-distribution-with-jdk11-jboss72</module>
+        <module>caib-artifacts-jdk11-jboss72/caib-artifacts-github-governib-distribution-with-jdk11-jboss72</module>
     </modules>
     <build>
         <pluginManagement>
