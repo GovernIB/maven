@@ -1,4 +1,4 @@
-# Repositori Maven software CAIB (GovernIb Github Maven Repository)
+# Repositori Maven software CAIB (GovernIB Github Maven Repository)
 Repositori maven de tots els projectes de la CAIB
 
 No conté codi font. Només la branca gh-pages conté els jar, wars, ears i d'altres dependències dels projectes CAIB que compilen emprant MAVEN.
