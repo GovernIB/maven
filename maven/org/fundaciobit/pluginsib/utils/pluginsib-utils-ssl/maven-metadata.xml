@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.pluginsib.utils</groupId>
   <artifactId>pluginsib-utils-ssl</artifactId>
   <versioning>
-    <release>2.0.0</release>
     <versions>
-      <version>2.0.0</version>
+      <version>3.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240524080232</lastUpdated>
+    <lastUpdated>20240527080924</lastUpdated>
   </versioning>
 </metadata>
