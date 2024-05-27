@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>es.caib.maven</groupId>
+  <artifactId>caib-artifacts-jdk11-jboss72</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240524121641</lastUpdated>
+  </versioning>
+</metadata>
