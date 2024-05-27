@@ -13,6 +13,16 @@ Per les solucions que utilitzin JDK11 i JBOSS 7.2 s'ha de fer que el pom arrel t
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
+Requereix afegir en el pom.xml el següent repositori:
+
+    <repositories>
+        <repository>
+            <id>github_governib_maven</id>
+            <name>GitHub GovernIB Maven Repository</name>
+            <url>https://governib.github.io/maven/maven/</url>
+        </repository>
+    </repositories>
+
 
 # JDK11 + JBOSS7.2 + Distribució Github GovernIB
 
@@ -23,3 +33,13 @@ Per les solucions que utilitzin JDK11 i JBOSS 7.2 i a més al fer deploy pugin e
         <groupId>es.caib.maven</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+
+Requereix afegir en el pom.xml el següent repositori:
+
+    <repositories>
+        <repository>
+            <id>github_governib_maven</id>
+            <name>GitHub GovernIB Maven Repository</name>
+            <url>https://governib.github.io/maven/maven/</url>
+        </repository>
+    </repositories>
