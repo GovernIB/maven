@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.pluginsib.utils</groupId>
   <artifactId>pluginsib-utils-commons</artifactId>
   <versioning>
-    <release>2.0.0</release>
     <versions>
-      <version>2.0.0</version>
+      <version>3.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240524080422</lastUpdated>
+    <lastUpdated>20240527080112</lastUpdated>
   </versioning>
 </metadata>
