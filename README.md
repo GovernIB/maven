@@ -103,7 +103,8 @@ La solució a errors d'aquest tipus  ```Caused by: sun.security.validator.Valida
 
 
 
-#CAIB Artifacts
+# CAIB Artifacts
+
 Conjunt de pom amb les dependències i altres elements requerits pels projectes desenvolupats a la CAIB que utilitzin JDK11+JBOSS7.2 o JDK11+JBOSS7.2+DISTRIBUCIÓ_GITHUB_GOVERNIB_MAVEN.
 
 Més detalls [aquí](https://github.com/GovernIB/maven/tree/caib-artifacts)
