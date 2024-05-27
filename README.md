@@ -1,4 +1,4 @@
-# maven
+# Repositori Maven software CAIB (GovernIb Github Maven Repository)
 Repositori maven de tots els projectes de la CAIB
 
 No conté codi font. Només la branca gh-pages conté els jar, wars, ears i d'altres dependències dels projectes CAIB que compilen emprant MAVEN.
@@ -102,4 +102,9 @@ Tot projecte CAIB, desenvolupat en maven, al final del pom.xml ha d'incloue aque
 La solució a errors d'aquest tipus  ```Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target``` la podeu trobar [AQUÍ](https://github.com/GovernIB/maven/tree/binaris/certificatsgoib)
 
 
+
+#CAIB Artifacts
+Conjunt de pom amb les dependències i altres elements requerits pels projectes desenvolupats a la CAIB que utilitzin JDK11+JBOSS7.2 o JDK11+JBOSS7.2+DISTRIBUCIÓ_GITHUB_GOVERNIB_MAVEN.
+
+Més detalls [aquí](https://github.com/GovernIB/maven/tree/caib-artifacts)
 
