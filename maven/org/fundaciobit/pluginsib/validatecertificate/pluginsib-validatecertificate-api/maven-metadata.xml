@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.pluginsib.validatecertificate</groupId>
   <artifactId>pluginsib-validatecertificate-api</artifactId>
   <versioning>
-    <release>2.0.0</release>
     <versions>
-      <version>2.0.0</version>
+      <version>3.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20220704120411</lastUpdated>
+    <lastUpdated>20240530110620</lastUpdated>
   </versioning>
 </metadata>
