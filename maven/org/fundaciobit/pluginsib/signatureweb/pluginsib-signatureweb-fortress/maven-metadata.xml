@@ -4,8 +4,8 @@
   <artifactId>pluginsib-signatureweb-fortress</artifactId>
   <versioning>
     <versions>
-      <version>3.1.0-SNAPSHOT</version>
+      <version>4.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20230904065520</lastUpdated>
+    <lastUpdated>20240604111833</lastUpdated>
   </versioning>
 </metadata>
