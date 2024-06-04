@@ -1,0 +1,157 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.fundaciobit.pluginsib.signatureweb</groupId>
+    <artifactId>pluginsib-signatureweb</artifactId>
+    <version>4.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>FundacioBit - PluginsIB - SignatureWeb</name>
+
+    <parent>
+        <artifactId>
+            caib-artifacts-github-governib-distribution-with-jdk11-jboss72</artifactId>
+        <groupId>es.caib.maven</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>api</module>
+        <module>miniappletutils</module>
+        <module>fire</module>
+        <module>fnmtcloud</module>
+        <module>miniappletinserversia</module>
+        <module>fortress</module>
+        <module>firmanocripto</module>
+        <module>afirma-triphase-server-lib</module>
+        <module>afirma-triphase-server</module>
+        <module>signaturewebtester</module>
+    </modules>
+
+    <developers>
+        <developer>
+            <id>anadal-fundaciobit</id>
+            <name>Antoni Nadal</name>
+        </developer>
+    </developers>
+
+    <organization>
+        <name>Fundació Bit - Govern Digital</name>
+        <url>https://governdigital.fundaciobit.org</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>European Union Public Licence (EUPL v1.2)</name>
+            <url>
+                https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
+        </license>
+    </licenses>
+
+    <repositories>
+        <repository>
+            <id>github_governib_maven</id>
+            <name>GitHub GovernIB Maven Repository</name>
+            <url>https://governib.github.io/maven/maven/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <pluginsib.signatureserver.version>4.0.0-SNAPSHOT</pluginsib.signatureserver.version>
+        <pluginsib.core.version>3.0.0-SNAPHOT</pluginsib.core.version>
+        <afirma.version>1.7.2</afirma.version>
+        <integra.version>2.2.1_000</integra.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Definició dels plugins estàndar de maven -->
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>3.1.2</version>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M5</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.0.0-M5</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-ear-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.0.0-M1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.9.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+    </build>
+
+    <profiles>
+        <profile>
+            <id>afirma-triphase-server-lib</id>
+            <modules>
+                <module>afirma-triphase-server-lib</module>
+            </modules>
+        </profile>
+        <profile>
+            <!-- Profile per executar els tests d'integració -->
+            <id>testsIntegracio</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>integration-test</goal>
+                                    <goal>verify</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
