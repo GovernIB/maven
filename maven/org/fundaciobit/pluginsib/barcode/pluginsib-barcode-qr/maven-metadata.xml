@@ -4,8 +4,8 @@
   <artifactId>pluginsib-barcode-qr</artifactId>
   <versioning>
     <versions>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>4.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20220304065749</lastUpdated>
+    <lastUpdated>20240605111505</lastUpdated>
   </versioning>
 </metadata>
