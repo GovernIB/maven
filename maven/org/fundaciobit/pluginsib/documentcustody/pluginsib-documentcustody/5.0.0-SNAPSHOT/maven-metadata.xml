@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.fundaciobit.pluginsib.documentcustody</groupId>
+  <artifactId>pluginsib-documentcustody</artifactId>
+  <version>5.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20240606.121024</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20240606121024</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>5.0.0-20240606.121024-1</value>
+        <updated>20240606121024</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
