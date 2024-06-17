@@ -7,7 +7,6 @@
 		<version>3.3</version>
 	</parent>
 	<artifactId>helium-disseny</artifactId>
-	<version>3.3.4</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 <!--		<java.version>1.7</java.version>-->
@@ -56,7 +55,7 @@
 		<profile>
 			<id>compilacio</id>
 			<activation>
-				<activeByDefault>false</activeByDefault>
+				<activeByDefault>true</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
@@ -75,7 +74,7 @@
 		<profile>
 			<id>disseny</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 			<build>
 				<plugins>
@@ -126,4 +125,5 @@
 		</repository>
 	</repositories>
 
+	<version>3.3.4</version>
 </project>
