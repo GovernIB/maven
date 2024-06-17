@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.fundaciobit.pluginsib.scanweb</groupId>
+  <artifactId>pluginsib-scanweb</artifactId>
+  <version>5.0.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20240617.093506</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20240617093506</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>5.0.0-20240617.093506-1</value>
+        <updated>20240617093506</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
