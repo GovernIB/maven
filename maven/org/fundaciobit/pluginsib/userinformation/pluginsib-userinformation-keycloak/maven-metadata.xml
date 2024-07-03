@@ -4,8 +4,8 @@
   <artifactId>pluginsib-userinformation-keycloak</artifactId>
   <versioning>
     <versions>
-      <version>4.0.0-SNAPSHOT</version>
+      <version>3.0.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240703074518</lastUpdated>
+    <lastUpdated>20240703075435</lastUpdated>
   </versioning>
 </metadata>
