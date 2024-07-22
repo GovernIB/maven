@@ -31,19 +31,19 @@
                 https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
         </license>
     </licenses>
-    
-     <properties>
-    <maven-site-plugin.skip>false</maven-site-plugin.skip>
- </properties>
+
+    <properties>
+        <maven-site-plugin.skip>false</maven-site-plugin.skip>
+    </properties>
 
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
-                <version>2.8.1</version>
                 <configuration>
                     <altDeploymentRepository>
-                        internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+                        internal.repo::default::file://${project.build.directory}/mvn-repo
+                    </altDeploymentRepository>
                 </configuration>
             </plugin>
             <plugin>
