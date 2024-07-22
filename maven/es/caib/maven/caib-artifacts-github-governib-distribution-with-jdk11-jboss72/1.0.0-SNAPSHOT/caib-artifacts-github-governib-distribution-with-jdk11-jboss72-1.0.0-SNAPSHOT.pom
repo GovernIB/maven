@@ -31,6 +31,10 @@
                 https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
         </license>
     </licenses>
+    
+     <properties>
+    <maven-site-plugin.skip>false</maven-site-plugin.skip>
+ </properties>
 
     <build>
         <plugins>
@@ -47,6 +51,7 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.12</version>
                 <configuration>
+                    <skip>${maven-site-plugin.skip}</skip>
                     <!-- git commit message -->
                     <message>Maven artifacts for ${project.version}</message>
                     <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
