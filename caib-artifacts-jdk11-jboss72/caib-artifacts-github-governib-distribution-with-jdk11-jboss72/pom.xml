@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>caib-artifacts-github-governib-distribution-with-jdk11-jboss72</artifactId>
+    <packaging>pom</packaging>
+    <name>CAIB - Artifacts - Github GovernIB Distribution amb JDK11 i JBoss 7.2</name>
+    <parent>
+        <groupId>es.caib.maven</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <artifactId>caib-artifacts-jdk11-jboss72</artifactId>
+    </parent>
+    <developers>
+        <developer>
+            <id>anadal-fundaciobit</id>
+            <name>Antoni Nadal</name>
+        </developer>
+    </developers>
+
+    <organization>
+        <name>Fundació Bit - Govern Digital</name>
+        <url>https://governdigital.fundaciobit.org</url>
+    </organization>
+    <inceptionYear>2024</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>European Union Public Licence (EUPL v1.2)</name>
+            <url>
+                https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
+        </license>
+    </licenses>
+
+    <properties>
+        <maven-site-plugin.skip>true</maven-site-plugin.skip>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <configuration>
+                    <altDeploymentRepository>
+                        internal.repo::default::file://${project.build.directory}/mvn-repo
+                    </altDeploymentRepository>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.12</version>
+                <configuration>
+                    <skip>${maven-site-plugin.skip}</skip>
+                    <!-- git commit message -->
+                    <message>Maven artifacts for ${project.version}</message>
+                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+                    <noJekyll>true</noJekyll>
+                    <!-- remote branch name -->
+                    <branch>refs/heads/gh-pages</branch>
+                    <includes>
+                        <include>**/*</include>
+                    </includes>
+                    <path>maven</path>
+                    <!-- github repo name -->
+                    <repositoryName>maven</repositoryName>
+                    <!-- github username or organization  -->
+                    <repositoryOwner>GovernIB</repositoryOwner>
+                    <server>github_governib_maven</server>
+                    <merge>true</merge>
+                    <dryRun>false</dryRun>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>deploy</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>github_governib_maven</id>
+            <name>GitHub GovernIB Maven Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+    </distributionManagement>
+</project>
