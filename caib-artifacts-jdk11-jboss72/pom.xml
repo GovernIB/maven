@@ -47,14 +47,14 @@
             <name>Maven Nuxeo Repository</name>
             <url>https://maven.nuxeo.org/nexus/content/groups/public/</url>
             <layout>default</layout>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
             </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
         </repository>
         <repository>
             <id>github-governib-maven-repos</id>
@@ -66,29 +66,41 @@
             <name>JBoss Releases Repository</name>
             <url>
                 https://repository.jboss.org/nexus/content/repositories/releases/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
             <releases>
+                <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
             </releases>
-            <snapshots>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
         </repository>
         <repository>
             <id>jboss-thirdparty-releases</id>
             <name>JBoss 3rd-party Repository</name>
             <url>
                 https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
             <releases>
+                <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
             </releases>
-            <snapshots>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
         </repository>
         <repository>
             <id>redhat-repository</id>
             <name>Redhat Repository</name>
             <url>https://maven.repository.redhat.com/ga/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
         </repository>
     </repositories>
     <dependencyManagement>
