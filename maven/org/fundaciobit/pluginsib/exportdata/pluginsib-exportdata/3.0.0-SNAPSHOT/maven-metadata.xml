@@ -2,19 +2,19 @@
 <metadata modelVersion="1.1.0">
   <groupId>org.fundaciobit.pluginsib.exportdata</groupId>
   <artifactId>pluginsib-exportdata</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
   <versioning>
+    <lastUpdated>20240730105851</lastUpdated>
     <snapshot>
-      <timestamp>20240527.082038</timestamp>
+      <timestamp>20240730.105851</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20240527082038</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20240527.082038-1</value>
-        <updated>20240527082038</updated>
+        <value>3.0.0-20240730.105851-1</value>
+        <updated>20240730105851</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
+  <version>3.0.0-SNAPSHOT</version>
 </metadata>
