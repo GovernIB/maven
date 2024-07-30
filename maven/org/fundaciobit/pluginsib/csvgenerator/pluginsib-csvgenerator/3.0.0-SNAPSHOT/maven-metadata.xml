@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.fundaciobit.pluginsib.csvgenerator</groupId>
+  <artifactId>pluginsib-csvgenerator</artifactId>
+  <versioning>
+    <lastUpdated>20240730110205</lastUpdated>
+    <snapshot>
+      <timestamp>20240730.110205</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>3.0.0-20240730.110205-1</value>
+        <updated>20240730110205</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>3.0.0-SNAPSHOT</version>
+</metadata>
