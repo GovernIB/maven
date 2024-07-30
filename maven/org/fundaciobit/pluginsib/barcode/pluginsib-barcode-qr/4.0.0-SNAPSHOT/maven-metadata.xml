@@ -3,27 +3,27 @@
   <groupId>org.fundaciobit.pluginsib.barcode</groupId>
   <artifactId>pluginsib-barcode-qr</artifactId>
   <versioning>
-    <lastUpdated>20240605112359</lastUpdated>
+    <lastUpdated>20240730110957</lastUpdated>
     <snapshot>
-      <timestamp>20240605.112359</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20240730.110957</timestamp>
+      <buildNumber>1</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>4.0.0-20240605.112359-2</value>
-        <updated>20240605112359</updated>
+        <value>4.0.0-20240730.110957-1</value>
+        <updated>20240730110957</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.0.0-20240605.112359-2</value>
-        <updated>20240605112359</updated>
+        <value>4.0.0-20240730.110957-1</value>
+        <updated>20240730110957</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>4.0.0-20240605.112359-2</value>
-        <updated>20240605112359</updated>
+        <value>4.0.0-20240730.110957-1</value>
+        <updated>20240730110957</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
