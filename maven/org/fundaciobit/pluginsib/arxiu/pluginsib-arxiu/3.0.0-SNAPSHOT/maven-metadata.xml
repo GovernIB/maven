@@ -3,16 +3,16 @@
   <groupId>org.fundaciobit.pluginsib.arxiu</groupId>
   <artifactId>pluginsib-arxiu</artifactId>
   <versioning>
-    <lastUpdated>20240730111110</lastUpdated>
+    <lastUpdated>20240730111828</lastUpdated>
     <snapshot>
-      <timestamp>20240730.111110</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20240730.111828</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20240730.111110-1</value>
-        <updated>20240730111110</updated>
+        <value>3.0.0-20240730.111828-2</value>
+        <updated>20240730111828</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
