@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.fundaciobit.pluginsib.barcode</groupId>
+	<version>4.0.0-SNAPSHOT</version>
+	<artifactId>pluginsib-barcode</artifactId>
+	<packaging>pom</packaging>
+
+	<parent>
+		<artifactId>
+			caib-artifacts-github-governib-distribution-with-jdk11-jboss72</artifactId>
+		<groupId>es.caib.maven</groupId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<name>PluginsIB - BarCode</name>
+	<modules>
+		<module>api</module>
+		<module>qrcode</module>
+		<module>pdf417</module>
+		<module>barcode128</module>
+	</modules>
+	<developers>
+		<developer>
+			<id>anadal-fundaciobit</id>
+			<name>Antoni Nadal</name>
+		</developer>
+	</developers>
+
+	<organization>
+		<name>Fundació Bit - Govern Digital</name>
+		<url>https://governdigital.fundaciobit.org</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>European Union Public Licence (EUPL v1.2)</name>
+			<url>
+				https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
+		</license>
+	</licenses>
+
+	<repositories>
+		<repository>
+			<id>github-governib-maven-repos</id>
+			<name>GitHub GovernIB Maven Repository</name>
+			<url>http://GovernIB.github.io/maven/maven/</url>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>org.fundaciobit.pluginsib.core.v3</groupId>
+			<artifactId>pluginsib-core</artifactId>
+			<version>3.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

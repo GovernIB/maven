@@ -3,16 +3,16 @@
   <groupId>org.fundaciobit.pluginsib.barcode</groupId>
   <artifactId>pluginsib-barcode</artifactId>
   <versioning>
-    <lastUpdated>20240730110957</lastUpdated>
+    <lastUpdated>20240730112744</lastUpdated>
     <snapshot>
-      <timestamp>20240730.110957</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20240730.112744</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>4.0.0-20240730.110957-1</value>
-        <updated>20240730110957</updated>
+        <value>4.0.0-20240730.112744-2</value>
+        <updated>20240730112744</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
