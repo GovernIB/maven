@@ -2,30 +2,30 @@
 <metadata modelVersion="1.1.0">
   <groupId>org.fundaciobit.pluginsib.login</groupId>
   <artifactId>pluginsib-login-loginib</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
   <versioning>
+    <lastUpdated>20240730114023</lastUpdated>
     <snapshot>
-      <timestamp>20240618.092052</timestamp>
+      <timestamp>20240730.114023</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20240618092052</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>2.0.0-20240618.092052-1</value>
-        <updated>20240618092052</updated>
+        <value>2.0.0-20240730.114023-1</value>
+        <updated>20240730114023</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>2.0.0-20240618.092052-1</value>
-        <updated>20240618092052</updated>
+        <value>2.0.0-20240730.114023-1</value>
+        <updated>20240730114023</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>2.0.0-20240618.092052-1</value>
-        <updated>20240618092052</updated>
+        <value>2.0.0-20240730.114023-1</value>
+        <updated>20240730114023</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
+  <version>2.0.0-SNAPSHOT</version>
 </metadata>
