@@ -2,30 +2,30 @@
 <metadata modelVersion="1.1.0">
   <groupId>org.fundaciobit.pluginsib.exportdata</groupId>
   <artifactId>pluginsib-exportdata-csv</artifactId>
-  <version>3.0.0-SNAPSHOT</version>
   <versioning>
+    <lastUpdated>20240730105851</lastUpdated>
     <snapshot>
-      <timestamp>20240527.082212</timestamp>
+      <timestamp>20240730.105851</timestamp>
       <buildNumber>1</buildNumber>
     </snapshot>
-    <lastUpdated>20240527082212</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>3.0.0-20240527.082212-1</value>
-        <updated>20240527082212</updated>
+        <value>3.0.0-20240730.105851-1</value>
+        <updated>20240730105851</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20240527.082212-1</value>
-        <updated>20240527082212</updated>
+        <value>3.0.0-20240730.105851-1</value>
+        <updated>20240730105851</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>3.0.0-20240527.082212-1</value>
-        <updated>20240527082212</updated>
+        <value>3.0.0-20240730.105851-1</value>
+        <updated>20240730105851</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
+  <version>3.0.0-SNAPSHOT</version>
 </metadata>
