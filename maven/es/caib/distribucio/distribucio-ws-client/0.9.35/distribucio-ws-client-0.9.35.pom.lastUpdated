@@ -1,0 +1,7 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Nov 02 15:20:00 CET 2021
+https\://maven.repository.redhat.com/ga/.lastUpdated=1635862799781
+https\://governib.github.io/maven/maven/.lastUpdated=1635862800030
+https\://maven.nuxeo.org/nexus/content/groups/public/.lastUpdated=1635414930630
+https\://maven.nuxeo.org/nexus/content/groups/public/.error=
+https\://maven.repository.redhat.com/ga/.error=
