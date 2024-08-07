@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fundaciobit.pluginsib.paymentweb</groupId>
+  <artifactId>pluginsib-paymentweb-bbva</artifactId>
+  <versioning>
+    <versions>
+      <version>3.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20240807112000</lastUpdated>
+  </versioning>
+</metadata>
