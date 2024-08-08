@@ -2,19 +2,19 @@
 <metadata modelVersion="1.1.0">
   <groupId>org.fundaciobit.pluginsib.arxiu</groupId>
   <artifactId>pluginsib-arxiu</artifactId>
+  <version>3.0.0-SNAPSHOT</version>
   <versioning>
-    <lastUpdated>20240730112353</lastUpdated>
     <snapshot>
-      <timestamp>20240730.112353</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20240807.103227</timestamp>
+      <buildNumber>2</buildNumber>
     </snapshot>
+    <lastUpdated>20240807103227</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>3.0.0-20240730.112353-1</value>
-        <updated>20240730112353</updated>
+        <value>3.0.0-20240807.103227-2</value>
+        <updated>20240807103227</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
-  <version>3.0.0-SNAPSHOT</version>
 </metadata>

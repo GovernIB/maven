@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>pluginsib-utils-commons</artifactId>
+    <packaging>jar</packaging>
+    <name>PluginsIB - Utils - Commons</name>
+    <parent>
+        <groupId>org.fundaciobit.pluginsib.utils</groupId>
+        <version>3.0.0-SNAPSHOT</version>
+        <artifactId>pluginsib-utils</artifactId>
+    </parent>
+    <repositories>
+        <repository>
+            <id>codelds</id>
+            <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+        </repository>
+    </repositories>
+    <dependencies>
+
+        <dependency>
+              <!--
+              <groupId>jakarta.activation</groupId>
+              <artifactId>jakarta.activation-api</artifactId>
+              <version>1.2.2</version>
+              -->
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+        </dependency>
+        <dependency>
+              <!--
+              <groupId>jakarta.mail</groupId>
+              <artifactId>jakarta.mail-api</artifactId>
+              <version>1.6.4</version>
+              -->
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+    </dependencies>
+</project>
