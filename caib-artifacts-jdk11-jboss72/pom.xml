@@ -32,7 +32,7 @@
 
     <properties>
         <!-- Versió de JBoss -->
-        <jboss-eap.version>7.2.0.GA</jboss-eap.version>   
+        <jboss-eap.version>7.2.0.GA</jboss-eap.version>
         <jboss-javaee.version>1.0.1.Final-redhat-00003</jboss-javaee.version>
         <!-- Propietats que afecten els plugins -->
         <maven.compiler.release>11</maven.compiler.release>
@@ -60,7 +60,7 @@
             <id>github-governib-maven-repos</id>
             <name>GitHub GovernIB Maven Repository</name>
             <url>https://governib.github.io/maven/maven/</url>
-             <snapshots>
+            <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
@@ -151,40 +151,61 @@
             <plugins>
                 <!-- Definició dels plugins estàndar de maven -->
                 <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>3.1.2</version>
+                </plugin>
+                <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>3.9.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-dependency-plugin</artifactId>
-                    <version>3.1.1</version>
+                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-resources-plugin</artifactId>
-                    <version>3.3.1</version>
+                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-ejb-plugin</artifactId>
+                    <version>3.2.1</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-war-plugin</artifactId>
-                    <version>3.2.3</version>
+                    <version>3.3.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-ear-plugin</artifactId>
-                    <version>3.0.2</version>
+                    <version>3.3.0</version>
+                </plugin>
+                <!-- Testing -->
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.3.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>3.3.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
             <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-resources-plugin</artifactId>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                </configuration>
             </plugin>
             <!-- Sempre afegir jar amb el codi font -->
             <plugin>
