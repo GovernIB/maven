@@ -34,6 +34,7 @@
         <!-- Versió de JBoss -->
         <jboss-eap.version>7.2.0.GA</jboss-eap.version>
         <jboss-javaee.version>1.0.1.Final-redhat-00003</jboss-javaee.version>
+        <javaee-api.version>8.0.1</javaee-api.version>
         <!-- Propietats que afecten els plugins -->
         <maven.compiler.release>11</maven.compiler.release>
         <maven.compiler.target>11</maven.compiler.target>
@@ -133,6 +134,18 @@
                 <version>${jboss-javaee.version}</version>
                 <type>pom</type>
             </dependency>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>${javaee-api.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>activation</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            
         </dependencies>
     </dependencyManagement>
     <dependencies>
