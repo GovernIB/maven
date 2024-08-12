@@ -201,6 +201,15 @@
                     <artifactId>maven-ear-plugin</artifactId>
                     <version>3.3.0</version>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>3.0.0-M3</version>
+                </plugin>
                 <!-- Testing -->
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -220,27 +229,12 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <!-- Sempre afegir jar amb el codi font -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.3.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
             <!-- Gestió de requisits del build -->
             <!-- Veure:
             https://maven.apache.org/enforcer/enforcer-rules/index.html -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
-                <version>3.0.0-M3</version>
                 <configuration>
                     <rules>
                         <requireMavenVersion>
