@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.queesticfent</groupId>
   <artifactId>queesticfent-api-externa-client</artifactId>
   <versioning>
-    <release>1.0</release>
     <versions>
-      <version>1.0</version>
+      <version>1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240305133002</lastUpdated>
+    <lastUpdated>20240827102806</lastUpdated>
   </versioning>
 </metadata>
