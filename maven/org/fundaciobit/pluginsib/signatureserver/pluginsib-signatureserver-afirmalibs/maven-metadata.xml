@@ -4,8 +4,8 @@
   <artifactId>pluginsib-signatureserver-afirmalibs</artifactId>
   <versioning>
     <versions>
-      <version>4.0.0-SNAPSHOT</version>
+      <version>4.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240808061400</lastUpdated>
+    <lastUpdated>20241112071752</lastUpdated>
   </versioning>
 </metadata>
