@@ -4,8 +4,8 @@
   <artifactId>pluginsib-validatesignature</artifactId>
   <versioning>
     <versions>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>3.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20240808084330</lastUpdated>
+    <lastUpdated>20241113075443</lastUpdated>
   </versioning>
 </metadata>
