@@ -49,7 +49,7 @@
             <url>https://maven.nuxeo.org/nexus/content/groups/public/</url>
             <layout>default</layout>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
             <releases>
@@ -76,7 +76,7 @@
             <url>
                 https://repository.jboss.org/nexus/content/repositories/releases/</url>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
             <releases>
@@ -90,7 +90,7 @@
             <url>
                 https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/</url>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
             <releases>
@@ -103,8 +103,7 @@
             <name>Redhat Repository</name>
             <url>https://maven.repository.redhat.com/ga/</url>
             <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>daily</updatePolicy>
+                <enabled>false</enabled>
             </snapshots>
             <releases>
                 <enabled>true</enabled>
@@ -145,7 +144,6 @@
                     </exclusion>
                 </exclusions>
             </dependency>
-            
         </dependencies>
     </dependencyManagement>
     <dependencies>
