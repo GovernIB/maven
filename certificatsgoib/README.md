@@ -57,3 +57,10 @@ Certificat pemfiles\pre_firmacloud_com.pem amb alias pre_firmacloud_com incorpor
 ```
 
 
+### Alternativa
+
+Com a darrera opció si les anteriors solucions no funcionen és la de compilar emprant els següents paràmetres:
+```
+mvn -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true clean install
+```
+
