@@ -2,30 +2,24 @@
 <metadata modelVersion="1.1.0">
   <groupId>org.fundaciobit.pluginsib.barcode</groupId>
   <artifactId>pluginsib-barcode-barcode128</artifactId>
+  <version>4.0.0-SNAPSHOT</version>
   <versioning>
-    <lastUpdated>20240730112744</lastUpdated>
     <snapshot>
-      <timestamp>20240730.112744</timestamp>
-      <buildNumber>2</buildNumber>
+      <timestamp>20250128.125815</timestamp>
+      <buildNumber>1</buildNumber>
     </snapshot>
+    <lastUpdated>20250128125815</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
-        <extension>jar</extension>
-        <value>4.0.0-20240730.112744-2</value>
-        <updated>20240730112744</updated>
-      </snapshotVersion>
-      <snapshotVersion>
         <extension>pom</extension>
-        <value>4.0.0-20240730.112744-2</value>
-        <updated>20240730112744</updated>
+        <value>4.0.0-20250128.125815-1</value>
+        <updated>20250128125815</updated>
       </snapshotVersion>
       <snapshotVersion>
-        <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>4.0.0-20240730.112744-2</value>
-        <updated>20240730112744</updated>
+        <value>4.0.0-20250128.125815-1</value>
+        <updated>20250128125815</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
-  <version>4.0.0-SNAPSHOT</version>
 </metadata>
