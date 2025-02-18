@@ -3,10 +3,9 @@
   <groupId>org.fundaciobit.pluginsib.signatureweb</groupId>
   <artifactId>pluginsib-signatureweb-miniappletinserver</artifactId>
   <versioning>
-    <release>3.0.0</release>
     <versions>
-      <version>3.0.0</version>
+      <version>4.1.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20210921133941</lastUpdated>
+    <lastUpdated>20250218134405</lastUpdated>
   </versioning>
 </metadata>
