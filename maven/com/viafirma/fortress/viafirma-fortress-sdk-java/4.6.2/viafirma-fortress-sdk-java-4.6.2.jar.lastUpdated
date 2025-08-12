@@ -1,0 +1,15 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 12 14:02:03 CEST 2025
+https\://maven.repository.redhat.com/ga/.lastUpdated=1733900728437
+https\://repository.jboss.org/nexus/content/repositories/releases/.error=
+https\://governib.github.io/maven/maven/.error=
+https\://repository.jboss.org/nexus/content/repositories/releases/.lastUpdated=1733900726381
+https\://maven.nuxeo.org/nexus/content/groups/public/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1755000123271
+http\://repositorio.viavansi.com/repo/.lastUpdated=1733900729360
+https\://governib.github.io/maven/maven/.lastUpdated=1755000123127
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.error=
+https\://repo.maven.apache.org/maven2/.error=
+https\://repository.jboss.org/nexus/content/repositories/thirdparty-releases/.lastUpdated=1733900726882
+https\://maven.nuxeo.org/nexus/content/groups/public/.lastUpdated=1733900725534
+https\://maven.repository.redhat.com/ga/.error=
