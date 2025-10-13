@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>es.caib.maven</groupId>
+  <artifactId>caib-artifacts-jdk11-jboss72or74-with-github-governib-distribution</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20251013.081425</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20251013081425</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0.1-20251013.081425-1</value>
+        <updated>20251013081425</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
