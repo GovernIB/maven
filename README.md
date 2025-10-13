@@ -40,9 +40,9 @@ En les dues configuracions anteriors es requereix afegir en el pom.xml el següe
 
 El productes finals (ears o wars) que tenguin parent "caib-artifacts" es poden construir per Jboss 7.2 o per JBoss 7.4.
 Per defecte les construccions es fan per JBoss 7.2:
-    * mvn clean install: Construcció per Jboss 7.2 (Construcció per defecte)
-    * mvn clean install -Djboss=7.2: Construcció per JBoss 7.2 (Construcció explicita)
-    * mvn clean install -Djboss=7.4: Construcció per JBoss 7.4 (Construcció explicita)
+- mvn clean install: Construcció per Jboss 7.2 (Construcció per defecte)
+- mvn clean install -Djboss=7.2: Construcció per JBoss 7.2 (Construcció explicita)
+- mvn clean install -Djboss=7.4: Construcció per JBoss 7.4 (Construcció explicita)
 
 
 ## Com saltar el deploy d'un mòdul maven (pom.xml)
