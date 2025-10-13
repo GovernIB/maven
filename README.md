@@ -45,6 +45,72 @@ Per defecte les construccions es fan per JBoss 7.2:
 - mvn clean install -Djboss=7.4: Construcció per JBoss 7.4 (Construcció explicita)
 
 
+
+## Com definir dependències segons si es compila per JBoss 7.2 o per JBoss 7.4
+
+NOTA
+```
+   <profiles>
+        <!-- Profile jboss72: actiu per defecte -->
+        <profile>
+            <id>jboss72_def</id>
+            <activation>
+                <property>
+                    <name>!jboss</name>
+                </property>
+            </activation>
+            <dependencies>
+                <!-- Dependències específiques per a JBoss 7.2 -->
+                <dependency>
+                    <groupId>com.sun.mail</groupId>
+                    <artifactId>javax.mail</artifactId>
+                </dependency>
+            </dependencies>
+        </profile>
+        <!-- Profile jboss72: actiu per propietat -->
+        <profile>
+            <id>jboss72_explicit</id>
+            <activation>
+                <property>
+                    <name>jboss</name>
+                    <value>7.2</value>
+                </property>
+            </activation>
+            <dependencies>
+                <!-- Dependències específiques per a JBoss 7.2 -->
+                <dependency>
+                    <groupId>com.sun.mail</groupId>
+                    <artifactId>javax.mail</artifactId>
+                </dependency>
+            </dependencies>
+        </profile>
+        <!-- Profile jboss74: actiu per propietat -->
+        <profile>
+            <id>jboss74_explicit</id>
+            <activation>
+                <property>
+                    <name>jboss</name>
+                    <value>7.4</value>
+                </property>
+            </activation>
+            <dependencies>
+                <!-- Dependències específiques per a JBoss 7.4 -->
+                <dependency>
+                    <groupId>com.google.code.findbugs</groupId>
+                    <artifactId>jsr305</artifactId>
+                    <version>1.3.9</version>
+                </dependency>
+            </dependencies>
+        </profile>
+    </profiles>
+```
+
+
+
+
+
+
+
 ## Com saltar el deploy d'un mòdul maven (pom.xml)
 
 Hi ha dues possibles formes de fer-ho
