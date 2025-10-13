@@ -48,9 +48,10 @@ Per defecte les construccions es fan per JBoss 7.2:
 
 ## Com definir dependències segons si es compila per JBoss 7.2 o per JBoss 7.4
 
-NOTA
+*NOTA IMPORTANT: Els profiles jboss72_def i jboss72_explicit han de ser sempre iguals !!!!!*
 ```
-   <profiles>
+          <profiles>
+    
         <!-- Profile jboss72: actiu per defecte -->
         <profile>
             <id>jboss72_def</id>
@@ -62,11 +63,20 @@ NOTA
             <dependencies>
                 <!-- Dependències específiques per a JBoss 7.2 -->
                 <dependency>
-                    <groupId>com.sun.mail</groupId>
-                    <artifactId>javax.mail</artifactId>
+                    <groupId>javax.activation</groupId>
+                    <artifactId>activation</artifactId>
+                    <version>1.1.1.redhat-5</version>
                 </dependency>
+        
+                <dependency>
+                    <groupId>javax.persistence</groupId>
+                    <artifactId>javax.persistence-api</artifactId>
+                    <version>2.2.0.redhat-1</version>
+                </dependency>
+
             </dependencies>
         </profile>
+
         <!-- Profile jboss72: actiu per propietat -->
         <profile>
             <id>jboss72_explicit</id>
@@ -79,11 +89,19 @@ NOTA
             <dependencies>
                 <!-- Dependències específiques per a JBoss 7.2 -->
                 <dependency>
-                    <groupId>com.sun.mail</groupId>
-                    <artifactId>javax.mail</artifactId>
+                    <groupId>javax.activation</groupId>
+                    <artifactId>activation</artifactId>
+                    <version>1.1.1.redhat-5</version>
+                </dependency>
+        
+                <dependency>
+                    <groupId>javax.persistence</groupId>
+                    <artifactId>javax.persistence-api</artifactId>
+                    <version>2.2.0.redhat-1</version>
                 </dependency>
             </dependencies>
         </profile>
+
         <!-- Profile jboss74: actiu per propietat -->
         <profile>
             <id>jboss74_explicit</id>
@@ -96,9 +114,14 @@ NOTA
             <dependencies>
                 <!-- Dependències específiques per a JBoss 7.4 -->
                 <dependency>
-                    <groupId>com.google.code.findbugs</groupId>
-                    <artifactId>jsr305</artifactId>
-                    <version>1.3.9</version>
+                    <groupId>jakarta.activation</groupId>
+                    <artifactId>jakarta.activation-api</artifactId>
+                    <version>1.2.2.redhat-00001</version>
+                </dependency>
+                <dependency>
+                        <groupId>jakarta.persistence</groupId>
+                        <artifactId>jakarta.persistence-api</artifactId>
+                        <version>2.2.3.redhat-00001</version>
                 </dependency>
             </dependencies>
         </profile>
