@@ -1,0 +1,113 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>es.caib.distribucio</groupId>
+	<artifactId>distribucio</artifactId>
+	<version>1.0.3</version>
+	<packaging>pom</packaging>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.16</version>
+	</parent>
+	<properties>
+		<springboot.version>2.7.16</springboot.version>
+		<liquibase.version>4.4.3</liquibase.version>
+		<openapi.version>1.7.0</openapi.version>
+		<orika.version>1.5.4</orika.version>
+		<sitemesh.version>2.5.0</sitemesh.version>
+		<jerseyclient.version>1.19.3</jerseyclient.version>
+		<keycloak.version>22.0.4</keycloak.version>
+		<plugins.validatesignature.version>3.0.0-SNAPSHOT</plugins.validatesignature.version>
+		<xdocreport.version>2.0.4</xdocreport.version>
+
+		<cxf.version>3.2.5.redhat-00001</cxf.version>
+		<arxiu.api.version>3.0.0-SNAPSHOT</arxiu.api.version>
+		<arxiu.filesystem.version>3.0.0-SNAPSHOT</arxiu.filesystem.version>
+
+		<portafib.version>1.1</portafib.version>
+		<regweb.version>3.2.5</regweb.version>
+		<dir3caib.version>1.0.7</dir3caib.version>
+		<bouncycastle.version>1.46</bouncycastle.version>
+		<implementation.vendor>Límit Tecnologies</implementation.vendor>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<skipTests>true</skipTests>
+		<version.date>2025.04.03 12:00h</version.date>
+	</properties>
+	<modules>
+		<module>distribucio-api-externa</module>
+		<module>distribucio-api-interna</module>
+		<module>distribucio-back</module>
+		<module>distribucio-ear</module>
+		<module>distribucio-persistence</module>
+		<module>distribucio-plugin</module>
+		<module>distribucio-plugin-impl</module>
+		<module>distribucio-service</module>
+		<module>distribucio-service-intf</module>
+		<module>distribucio-ejb</module>
+		<module>distribucio-ws-client</module>
+		<module>distribucio-rest-client</module>
+		<module>distribucio-backoffice-utils</module>
+		<module>distribucio-ws</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.github.github</groupId>
+				<artifactId>site-maven-plugin</artifactId>
+				<version>0.12</version>
+				<configuration>
+					<message>Maven artifacts for ${project.version}</message>
+					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+					<noJekyll>true</noJekyll>
+					<branch>refs/heads/gh-pages</branch>
+					<includes>
+						<include>**/*</include>
+					</includes>
+					<path>maven</path>
+					<repositoryName>maven</repositoryName>
+					<repositoryOwner>GovernIB</repositoryOwner>
+					<server>github_governib_maven</server>
+					<merge>true</merge>
+					<dryRun>false</dryRun>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>site</goal>
+						</goals>
+						<phase>deploy</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+
+		<repository>
+			<id>github-governib-maven-repos</id>
+			<name>GitHub GovernIB Maven Repository</name>
+			<url>https://governib.github.io/maven/maven/</url>
+		</repository>
+
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>github_governib_maven</id>
+			<name>GitHub GovernIB Maven Repository</name>
+			<url>file://${project.build.directory}/mvn-repo</url>
+		</repository>
+	</distributionManagement>
+	
+</project>
