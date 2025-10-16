@@ -3,10 +3,10 @@
   <groupId>es.caib.distribucio</groupId>
   <artifactId>distribucio-service-intf</artifactId>
   <versioning>
-    <release>1.0.1</release>
+    <release>1.0.3</release>
     <versions>
-      <version>1.0.1</version>
+      <version>1.0.3</version>
     </versions>
-    <lastUpdated>20251016073212</lastUpdated>
+    <lastUpdated>20251016075332</lastUpdated>
   </versioning>
 </metadata>
