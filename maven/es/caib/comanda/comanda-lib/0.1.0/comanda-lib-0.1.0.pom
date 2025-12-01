@@ -98,19 +98,17 @@
                             </target>
                         </configuration>
                     </execution>
-
-<!--                    &lt;!&ndash; Renombrar JAR Java 7 &ndash;&gt;-->
-<!--                    <execution>-->
-<!--                        <id>rename-java7-jar</id>-->
-<!--                        <phase>install</phase>-->
-<!--                        <goals><goal>run</goal></goals>-->
-<!--                        <configuration>-->
-<!--                            <target>-->
-<!--                                <move file="${project.build.directory}/${project.artifactId}-${project.version}-java7.jar"-->
-<!--                                      tofile="${project.build.directory}/comanda-lib7-${project.version}.jar"/>-->
-<!--                            </target>-->
-<!--                        </configuration>-->
-<!--                    </execution>-->
+                    <execution>
+                        <id>delete-generated-java7</id>
+                        <phase>install</phase>
+                        <goals><goal>run</goal></goals>
+                        <configuration>
+                            <target>
+                                <delete dir="${project.build.directory}/generated-sources/java7" failonerror="false" />
+                                <delete dir="${project.build.directory}/classes-java7" failonerror="false" />
+                            </target>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
 
