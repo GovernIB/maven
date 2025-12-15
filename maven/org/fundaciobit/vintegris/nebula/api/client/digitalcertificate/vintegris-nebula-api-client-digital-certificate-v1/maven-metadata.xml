@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fundaciobit.vintegris.nebula.api.client.digitalcertificate</groupId>
+  <artifactId>vintegris-nebula-api-client-digital-certificate-v1</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20251215140634</lastUpdated>
+  </versioning>
+</metadata>
