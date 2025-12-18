@@ -1,0 +1,16 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Wed Nov 05 09:44:53 CET 2025
+@default-Viavansi-https\://repositorio.viavansi.com/repo/.lastUpdated=1762332292457
+file\://C\:\\Users\\andre\\git\\ripea\\ripea-plugin/../local-repo/.error=
+file\://C\:\\Users\\andre\\git\\ripea\\ripea-plugin/../local-repo/.lastUpdated=1762332292294
+http\://repositorio.viavansi.com/repo/.error=
+http\://repositorio.viavansi.com/repo/.lastUpdated=1754988834212
+https\://governib.github.io/maven/maven/.error=
+https\://governib.github.io/maven/maven/.lastUpdated=1762332292293
+https\://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/.error=
+https\://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/.lastUpdated=1762332293397
+https\://maven.repository.redhat.com/ga/.error=
+https\://maven.repository.redhat.com/ga/.lastUpdated=1762332293090
+https\://repo.maven.apache.org/maven2/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1762332293475
+https\://repositorio.viavansi.com/repo/.error=Could not transfer artifact com.viafirma\:documents-sdk-java\:jar\:sources\:3.5.140 from/to Viavansi (https\://repositorio.viavansi.com/repo)\: status code\: 403, reason phrase\: Forbidden (403)

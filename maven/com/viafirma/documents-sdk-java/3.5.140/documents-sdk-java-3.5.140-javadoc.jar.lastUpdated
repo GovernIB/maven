@@ -1,0 +1,14 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Aug 12 11:23:46 CEST 2025
+file\://C\:\\Users\\andre\\git\\ripea\\ripea-plugin/../local-repo/.error=
+file\://C\:\\Users\\andre\\git\\ripea\\ripea-plugin/../local-repo/.lastUpdated=1754990626389
+http\://repositorio.viavansi.com/repo/.error=
+http\://repositorio.viavansi.com/repo/.lastUpdated=1754989129127
+https\://governib.github.io/maven/maven/.error=
+https\://governib.github.io/maven/maven/.lastUpdated=1754989127618
+https\://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/.error=
+https\://jaspersoft.jfrog.io/jaspersoft/third-party-ce-artifacts/.lastUpdated=1754989130647
+https\://maven.repository.redhat.com/ga/.error=
+https\://maven.repository.redhat.com/ga/.lastUpdated=1754989129744
+https\://repo.maven.apache.org/maven2/.error=
+https\://repo.maven.apache.org/maven2/.lastUpdated=1754989130810
