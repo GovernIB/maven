@@ -108,13 +108,13 @@
         </plugins>
     </build>
     <dependencies>
-        <!-- CXF per JAX-RS (només compile) -->
+        <!-- CXF per JAX-RS (només compile)
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-bundle-jaxrs</artifactId>
             <version>2.2.9</version>
-            <scope>compile</scope>
-        </dependency>
+            <scope>provided</scope>
+        </dependency> -->
 
         <!-- JAX-RS API -->
         <dependency>
