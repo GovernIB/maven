@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fundaciobit.vintegris.nebula.apisgenerator</groupId>
+  <artifactId>vintegris-nebula-apis-generator</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20260216111040</lastUpdated>
+  </versioning>
+</metadata>
