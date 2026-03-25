@@ -527,6 +527,7 @@
                     <noJekyll>true</noJekyll>
                     <!-- remote branch name -->
                     <branch>refs/heads/gh-pages</branch>
+                    
                     <includes>
                         <include>**/*</include>
                     </includes>
