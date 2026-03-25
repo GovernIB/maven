@@ -53,16 +53,16 @@
     </properties>
 
     <modules>
-        <module>utils</module>
+        <!--<module>utils</module>
         <module>plugins</module>
         <module>model</module>
         <module>persistence</module>
         <module>ws</module>
         <module>ws-client</module>
         <module>sir</module>
-        <module>webapp</module>
+        <module>webapp</module>-->
         <module>ear</module>
-        <module>integraciones</module>
+        <!--<module>integraciones</module>-->
     </modules>
 
     <dependencyManagement>
