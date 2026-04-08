@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fundaciobit.pluginsib.validatesignature</groupId>
+  <artifactId>pluginsib-validatesignature-utilitatsfirma</artifactId>
+  <versioning>
+    <versions>
+      <version>3.1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20260408123348</lastUpdated>
+  </versioning>
+</metadata>
