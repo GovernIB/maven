@@ -2,24 +2,24 @@
 <metadata modelVersion="1.1.0">
   <groupId>org.fundaciobit.genapp</groupId>
   <artifactId>genapp-generator</artifactId>
-  <version>2.0.0-SNAPSHOT</version>
   <versioning>
+    <lastUpdated>20260609103027</lastUpdated>
     <snapshot>
-      <timestamp>20260605.103421</timestamp>
-      <buildNumber>1</buildNumber>
+      <timestamp>20260609.103027</timestamp>
+      <buildNumber>4</buildNumber>
     </snapshot>
-    <lastUpdated>20260605103421</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>2.0.0-20260605.103421-1</value>
-        <updated>20260605103421</updated>
+        <value>2.0.0-20260609.103027-4</value>
+        <updated>20260609103027</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>jar</extension>
-        <value>2.0.0-20260605.103421-1</value>
-        <updated>20260605103421</updated>
+        <value>2.0.0-20260609.103027-4</value>
+        <updated>20260609103027</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
+  <version>2.0.0-SNAPSHOT</version>
 </metadata>
