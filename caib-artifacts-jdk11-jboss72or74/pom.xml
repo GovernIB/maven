@@ -43,7 +43,9 @@
         <repository>
             <id>maven-nuxeo</id>
             <name>Maven Nuxeo Repository</name>
-            <url>https://maven.nuxeo.org/nexus/content/groups/public/</url>
+            <!-- El antiguo dominio maven.nuxeo.org ya no está operativo y Nuxeo ha migrado y actualizado sus repositorios oficiales a HTTPS bajo Nuxeo Packages -->
+            <!-- <url>https://maven.nuxeo.org/nexus/content/groups/public/</url> -->
+            <url>https://packages.nuxeo.com/repository/maven-public</url>
             <layout>default</layout>
             <snapshots>
                 <enabled>false</enabled>

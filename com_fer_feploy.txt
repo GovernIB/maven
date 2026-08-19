@@ -7,6 +7,8 @@
 (2) Per caib-artifacts-jdk11-jboss72or74:
     a.- mvn clean install
     b.- Executar PowerShell
-    c.- Executar: Get-FileHash D:\programs\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm SHA1 | ForEach-Object { $_.Hash } > D:\programs\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.sha1
-    d.- Executar: Get-FileHash D:\programs\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm MD5 | ForEach-Object { $_.Hash } > D:\programs\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.md5
-    e.- Pujar a ma els fitxer pom, xml, md5 i sha1 al repositori maven de Github GovernIB
+    c.- Executar: Get-FileHash C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm SHA1 | ForEach-Object { $_.Hash } > C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.sha1
+    d.- Executar: Get-FileHash C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm MD5 | ForEach-Object { $_.Hash } > C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.md5
+    
+    e.- Pujar a ma els fitxer pom, xml, md5 i sha1 al repositori maven de Github GovernIB: Copiar tot lo de "C:\Users\anadal\.m2\repository\maven\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT" a "C:\dades\github-governib-maven-repository\maven\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT" i fer commit.
+                  
