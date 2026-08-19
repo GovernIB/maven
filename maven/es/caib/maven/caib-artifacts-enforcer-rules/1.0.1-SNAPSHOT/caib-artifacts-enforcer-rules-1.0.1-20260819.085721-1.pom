@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>es.caib.maven</groupId>
+    <artifactId>caib-artifacts-enforcer-rules</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>CAIB - Artifacts - Enforcer Rules</name>
+    
+    <developers>
+        <developer>
+            <id>anadal-fundaciobit</id>
+            <name>Antoni Nadal</name>
+        </developer>
+    </developers>
+
+    <organization>
+        <name>Fundació Bit - Govern Digital</name>
+        <url>https://governdigital.fundaciobit.org</url>
+    </organization>
+
+    <inceptionYear>2025</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>European Union Public Licence (EUPL v1.2)</name>
+            <url>
+                https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
+        </license>
+    </licenses>
+
+
+    <properties>
+        <!-- Propietats que afecten els plugins -->
+        <maven.compiler.release>11</maven.compiler.release>
+        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <dependencies>
+
+        <!-- API del Maven Enforcer (para usar EnforcerRule, EnforcerRuleHelper, etc.) -->
+        <dependency>
+            <groupId>org.apache.maven.enforcer</groupId>
+            <artifactId>enforcer-api</artifactId>
+            <version>3.6.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Maven Core API: contiene org.apache.maven.project.MavenProject -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+            <version>3.9.9</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Maven Plugin API: clases comunes para los helpers -->
+        <dependency>
+            <groupId>org.apache.maven.plugin-tools</groupId>
+            <artifactId>maven-plugin-annotations</artifactId>
+            <version>3.13.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Logging del core de Maven (solo si quieres logs dentro de las reglas) -->
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+              <plugin>
+                <groupId>com.github.github</groupId>
+                <artifactId>site-maven-plugin</artifactId>
+                <version>0.12</version>
+                <configuration>
+                    <message>Maven artifacts for ${project.version}</message>
+                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+                    <noJekyll>true</noJekyll>
+                    <branch>refs/heads/gh-pages</branch>
+                    <includes>
+                        <include>**/*</include>
+                    </includes>
+                    <path>maven</path>
+                    <repositoryName>maven</repositoryName>
+                    <repositoryOwner>GovernIB</repositoryOwner>
+                    <server>github_governib_maven</server>
+                    <merge>true</merge>
+                    <dryRun>false</dryRun>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>site</goal>
+                        </goals>
+                        <phase>deploy</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>github_governib_maven</id>
+            <name>GitHub GovernIB Maven Repository</name>
+            <url>file://${project.build.directory}/mvn-repo</url>
+        </repository>
+    </distributionManagement>
+
+</project>
