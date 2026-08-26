@@ -3,10 +3,10 @@
   <groupId>es.caib.comanda</groupId>
   <artifactId>comanda-api-utils</artifactId>
   <versioning>
-    <release>1.0.0</release>
+    <release>1.0.1</release>
     <versions>
-      <version>1.0.0</version>
+      <version>1.0.1</version>
     </versions>
-    <lastUpdated>20260504153108</lastUpdated>
+    <lastUpdated>20260826090709</lastUpdated>
   </versioning>
 </metadata>
