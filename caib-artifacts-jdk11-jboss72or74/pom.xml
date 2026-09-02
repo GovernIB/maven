@@ -43,7 +43,8 @@
         <repository>
             <id>maven-nuxeo</id>
             <name>Maven Nuxeo Repository</name>
-            <!-- El antiguo dominio maven.nuxeo.org ya no está operativo y Nuxeo ha migrado y actualizado sus repositorios oficiales a HTTPS bajo Nuxeo Packages -->
+            <!-- El antiguo dominio maven.nuxeo.org ya no está operativo y Nuxeo ha migrado y actualizado sus repositorios oficiales a HTTPS
+            bajo Nuxeo Packages -->
             <!-- <url>https://maven.nuxeo.org/nexus/content/groups/public/</url> -->
             <url>https://packages.nuxeo.com/repository/maven-public</url>
             <layout>default</layout>
@@ -118,13 +119,21 @@
                 <version>${jboss-eap.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>junit</groupId>
+                        <artifactId>junit</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
+
     </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -134,9 +143,8 @@
     </dependencies>
 
 
-
     <profiles>
-    
+
         <!-- Profile jboss72: actiu per defecte -->
         <profile>
             <id>jboss72_def</id>
@@ -160,8 +168,13 @@
                         <version>${jboss-eap.version}</version>
                         <type>pom</type>
                         <scope>import</scope>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>junit</groupId>
+                                <artifactId>junit</artifactId>
+                            </exclusion>
+                        </exclusions>
                     </dependency>
-
 
 
                     <dependency>
@@ -169,6 +182,12 @@
                         <artifactId>jboss-javaee-8.0</artifactId>
                         <version>${jboss-javaee.version}</version>
                         <type>pom</type>
+                        <exclusions>
+                            <exclusion>
+                                <groupId>junit</groupId>
+                                <artifactId>junit</artifactId>
+                            </exclusion>
+                        </exclusions>
                     </dependency>
                     <dependency>
                         <groupId>javax</groupId>
@@ -179,6 +198,10 @@
                                 <groupId>javax.activation</groupId>
                                 <artifactId>activation</artifactId>
                             </exclusion>
+                            <exclusion>
+                                <groupId>junit</groupId>
+                                <artifactId>junit</artifactId>
+                            </exclusion>
                         </exclusions>
                     </dependency>
                 </dependencies>
@@ -187,6 +210,7 @@
                 <dependency>
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
+                    <version>4.13.2</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -227,8 +251,8 @@
                 </plugins>
             </build>
         </profile>
-    
-    
+
+
         <!-- Profile jboss72: actiu per propietat -->
         <profile>
             <id>jboss72_explicit</id>
@@ -246,7 +270,7 @@
             </properties>
             <dependencyManagement>
                 <dependencies>
-                <!-- Dependèncias específiques per a JBoss 7.2 -->
+                    <!-- Dependèncias específiques per a JBoss 7.2 -->
                     <dependency>
                         <groupId>org.jboss.bom</groupId>
                         <artifactId>jboss-eap-javaee8-with-tools</artifactId>
@@ -254,7 +278,7 @@
                         <type>pom</type>
                         <scope>import</scope>
                     </dependency>
-                    
+
                     <dependency>
                         <groupId>org.jboss.spec</groupId>
                         <artifactId>jboss-javaee-8.0</artifactId>
@@ -279,6 +303,7 @@
                 <dependency>
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
+                    <version>4.13.2</version>
                     <scope>test</scope>
                 </dependency>
             </dependencies>
@@ -321,8 +346,6 @@
         </profile>
 
 
-
-    
         <!-- Profile jboss74: se activa manualmente -->
         <profile>
             <id>jboss74_explicit</id>
@@ -351,7 +374,7 @@
                     <dependency>
                         <groupId>junit</groupId>
                         <artifactId>junit</artifactId>
-                        <version>4.12</version>
+                        <version>4.13.2</version>
                         <scope>test</scope>
                     </dependency>
                 </dependencies>
@@ -393,7 +416,6 @@
                 </plugins>
             </build>
         </profile>
-    
 
 
         <!-- Profile para activar reglas estrictas -->
@@ -439,7 +461,6 @@
             </build>
         </profile>
     </profiles>
-
 
 
     <build>
