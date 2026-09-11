@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -File .\script_to_deploy_for_caib-artifacts-jdk11-jboss72or74.ps1

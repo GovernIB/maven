@@ -3,12 +3,18 @@
     a.- mvn deploy -pl caib-artifacts-enforcer-rules
 
 
-(1) Per caib-artifacts-jdk11-jboss72or74:
-    a.- Anar a caib-artifacts-jdk11-jboss72or74 i executar: mvn clean install
-    b.- Executar PowerShell
-    c.- Executar: Get-FileHash C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm SHA1 | ForEach-Object { $_.Hash } > C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.sha1
-    d.- Executar: Get-FileHash C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm MD5 | ForEach-Object { $_.Hash } > C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT\caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.md5
-    e.- Pujar a ma els fitxer pom, xml, md5 i sha1 al repositori maven de Github GovernIB: Copiar tot lo de "C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT" a "C:\dades\github-governib-maven-repository\maven\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT" i fer commit.
+(1) Per caib-artifacts-jdk11-jboss72or74 (Per fer-ho automaticament només executar deploy_caib-artifacts-jdk11-jboss72or74.bat i commitar C:\dades\github-governib-maven-repository)
+    (1.1) Anar a C:\Users\anadal\.m2\repository\es\caib\maven\ i esborrar carpeta caib-artifacts-jdk11-jboss72or74
+    (1.2) Anar a C:\dades\dev\ProgramacioPortaFIB3\caib-artifacts\caib-artifacts-jdk11-jboss72or74 i executar: mvn clean install
+    (1.3) En C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74:
+        (1.3.a) Renombrar maven-metadata-local.xml per maven-metadata.xml
+        (1.3.b) En powershell executar "(Get-FileHash maven-metadata.xml -Algorithm SHA1).Hash.ToLower() > maven-metadata.xml.sha1"
+    (1.4) En C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\1.0.1-SNAPSHOT:
+        (1.4.a) Renombrar maven-metadata-local.xml per maven-metadata.xml 
+        (1.4.b) En powershell executar "(Get-FileHash maven-metadata.xml -Algorithm SHA1).Hash.ToLower() > maven-metadata.xml.sha1"
+        (1.4.c) En powershell executar "(Get-FileHash caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom -Algorithm SHA1).Hash.ToLower() > caib-artifacts-jdk11-jboss72or74-1.0.1-SNAPSHOT.pom.sha1"
+        (1.4.d) Esborrar fitxer _remote.repositories
+    (1.5) Copiar estructura de directoris de C:\Users\anadal\.m2\repository\es\caib\maven\caib-artifacts-jdk11-jboss72or74\  a C:\dades\github-governib-maven-repository\maven\es\caib\maven\caib-artifacts-jdk11-jboss72or74\
 
 
 (2) Per caib-artifacts-jdk11-jboss72or74-with-github-governib-distribution:

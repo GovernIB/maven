@@ -26,8 +26,7 @@
     <licenses>
         <license>
             <name>European Union Public Licence (EUPL v1.2)</name>
-            <url>
-                https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
+            <url>https://joinup.ec.europa.eu/sites/default/files/custom-page/attachment/eupl_v1.2_es.pdf</url>
         </license>
     </licenses>
 
@@ -126,16 +125,18 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+            
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.13.2</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>org.jboss.logging</groupId>
             <artifactId>jboss-logging</artifactId>

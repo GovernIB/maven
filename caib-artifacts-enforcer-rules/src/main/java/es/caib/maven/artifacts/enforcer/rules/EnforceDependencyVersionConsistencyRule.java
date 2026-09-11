@@ -31,10 +31,12 @@ public class EnforceDependencyVersionConsistencyRule implements EnforcerRule {
 
                         String v1 = dep.getVersion();
                         String v2 = managed.getVersion();
+
                         if (v1 != null && v2 != null && !v1.equals(v2)) {
                             throw new EnforcerRuleException(
-                                    "Dependencia '" + dep.getGroupId() + ":" + dep.getArtifactId() + "' usa versión "
-                                            + v1 + " distinta de la definida en dependencyManagement (" + v2 + ")");
+                                    "Dependencia '" + dep.getGroupId() + ":" + dep.getArtifactId() + "' usa versió "
+                                            + v1 + " diferent de la definida a un dependencyManagement (" + v2 + ")."
+                                            + " Solució: sobreescriure la versió al dependencymanagement.");
                         }
                     }
                 }
