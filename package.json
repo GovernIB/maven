@@ -1,8 +1,0 @@
-{
-  "name": "maven-automation",
-  "version": "1.0.0",
-  "description": "Automatitzacions de l'organització",
-  "dependencies": {
-    "@octokit/rest": "^20.0.2"
-  }
-}
